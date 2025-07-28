@@ -1,0 +1,61 @@
+<!-- templates/dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+        }
+        th {
+            background-color: #eee;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome {{ admin.username }}</h2>
+
+  
+
+    
+
+    <table>
+        <thead>
+            <tr>
+                <th>Phone</th>
+                <th>Produce</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Total Paid</th>
+                <th>Status</th>
+                <th>Transport Status</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for record in records %}
+                <tr>
+                    <td>{{ record.phone }}</td>
+                    <td>{{ record.produce }}</td>
+                    <td>{{ record.quantity }}</td>
+                    <td>{{ record.price }}</td>
+                    <td>{{ record.total_paid or record.total_cost }}</td>
+                    <td>{{ record.status }}</td>
+                    <td>{{ record.transport_checkout_status }}</td>
+                    <td>{{ record.timestamp }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!-- templates/login.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px auto;
+            width: 300px;
+        }
+        input, button {
+            width: 100%;
+            padding: 8px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Admin Login</h2>
+    {% if error %}
+        <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <label>Username:</label>
+        <input type="text" name="username" required>
+        <label>Password:</label>
+        <input type="password" name="password" required>
+        <button type="submit">Login</button>
+    </form>
+</body>
+</html>
