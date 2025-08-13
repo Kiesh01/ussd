@@ -1,4 +1,4 @@
-**A STUDY OF A TICKETING MECHANISM FOR KENYA AGRICULTURAL LIVESTOCK RESEARCH ORGANIZATION (KARLO) FARMERS.**
+A TICKETING MECHANISM FOR KENYA AGRICULTURAL LIVESTOCK RESEARCH ORGANIZATION (KALRO) FARMERS.
 
 
 
@@ -15,10 +15,26 @@ SUPERVISOR: Dr. DENNIS KABURU
 
 
 
-A proposal/ research project submitted to the Department of Information Technology in the School of Information Technology in partial fulfillment of the requirement for the award of the degree of Information Technology,                            Jomo Kenyatta University of Agriculture and Technology.
+
+
+
+
+
+
+
+
+
+
+
+
+
+A proposal/ research project submitted to the Department of Information Technology in the School of Information Technology in partial fulfillment of the requirement for the award of the degree of Information Technology,                          Jomo Kenyatta University of Agriculture and Technology.
 
 
 2025
+
+
+
 
 DECLARATION
 
@@ -47,10 +63,32 @@ Signature                                                                       
 
 
 
-**ABSTRACT**
 
-When attempting to access government services, farmers frequently experience communication breakdowns, which causes delays and inefficiencies that impede their farming operations. The absence of an efficient platform to communicate with government agencies has made it more difficult for farmers to get timely resources, technical assistance, and agricultural help. By investigating the nexus between agricultural service delivery and technology, this study seeks to address this issue and offers a solution that entails the creation of a centralised ticketing system. 
-With the use of this system, farmers will be able to track their requests, make enquiries, and get prompt answers from government officials—improving both service accessibility and general productivity. A requirements assessment of farmers is the first step in the technique, which also include creating a user-friendly system that can be accessed through mobile platforms and testing its operation and efficacy through a pilot program. The anticipated consequence is a notable increase in the effectiveness of farmer-government agency communication, which will lead to improved farming practices, more access to services, and higher agricultural productivity. Data from the initiative will also be used to inform future policy changes.
+
+
+
+
+
+
+
+
+ABSTRACT
+
+This project applies microservices architecture to address persistent communication challenges between farmers and the Kenya Agricultural and Livestock Research Organisation (KALRO). Farmers often experience delays, fragmented responses, and limited access to vital agricultural services due to the lack of a structured, responsive communication platform. The proposed solution is a centralized ticketing system built on microservices principles, where each core function—such as request submission, enquiry tracking, notification delivery, and analytics—is developed as an independent, interoperable service. This design ensures scalability, resilience, and adaptability to varying connectivity conditions, particularly in rural areas. The system will be accessible through mobile platforms, enabling farmers to log requests, receive timely updates, and track resolutions in real time. A pilot implementation will evaluate usability, response efficiency, and service delivery impact. The expected outcome is improved farmer–government engagement, greater service accessibility, and data-driven insights to inform future agricultural policies and operational improvements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -60,53 +98,225 @@ With the use of this system, farmers will be able to track their requests, make 
 
 
 Contents
+A TICKETING MECHANISM FOR KENYA AGRICULTURAL LIVESTOCK RESEARCH ORGANIZATION (KARLO) FARMERS.	i
+
 DECLARATION	ii
+
 ABSTRACT	iii
+
 CHAPTER ONE:	1
+
 1.0 INTRODUCTION.	1
-1.2 PROJECT OVERVIEW.	2
-1.3 STATE OF THE PROBLEM.	3
-1.4 PROPOSED SOLUTION.	5
-1.5 OBJECTIVES.	6
-1.6 RESEARCH QUESTIONS.	7
-1.7 JUSTIFICATION.	8
-1.8	METHODOLOGY.	9
-1.9	SCOPE.	11
-Appendices	12
-A.	Project Resources.	12
-B.	Budget	13
-C.	Project Duration	14
-CHAPTER TWO	15
-2.1 INTRODUCTION.	15
-2.2 THEORETICAL REVIEW.	16
-2.4 CASE STUDY REVIEW.	18
-1. eKilimo Platform (Kenya)	18
-2. M-Farm (Kenya)	18
-3. Digital Green (Global, with Pilots in Kenya)	19
-4. Safaricom's DigiFarm (Kenya)	20
-2.5 INTERGRATION AND ARCHITECTURE.	21
-2.6 SUMMARY.	24
-2.7 RESEARCH GAPS.	25
-References	26
+
+1.2 PROJECT OVERVIEW.	1
+
+1.3 STATE OF THE PROBLEM.	2
+
+1.4 PROPOSED SOLUTION.	4
+
+1.5 OBJECTIVES.	5
+
+1.6 RESEARCH QUESTIONS.	6
+
+1.7 JUSTIFICATION.	7
+
+1.8 METHODOLOGY	7
+
+1.9 SCOPE.	11
+
+Appendices	13
+
+A.	Project Resources.	13
+
+B.	Budget	14
+
+C.	Project Duration	15
+
+CHAPTER TWO	16
+
+2.1 INTRODUCTION.	16
+
+2.2 THEORETICAL REVIEW.	17
+
+2.3 CASE STUDY REVIEW.	19
+
+2.4 INTERGRATION AND ARCHITECTURE.	20
+
+2.4.1 Architectural Overview	20
+
+2.4.2 Integration Workflow	21
+
+2.4.3 Benefits of the Technology Stack	22
+
+2.5 SUMMARY.	23
+
+2.6 RESEARCH GAPS.	23
+
+References	25
+
+CHAPTER 3: SYSTEM ANALYSIS AND DESIGN	26
+
+3.1 INTRODUCTION	26
+
+3.2 SYSTEMS DEVELOPMENT METHODOLOGY	27
+
+3.3 FEASIBILITY STUDY	28
+
+3.3.1 Technical Feasibility	28
+
+3.3.2 Operational Feasibility	28
+
+3.3.3 Economic Feasibility	29
+
+3.3.4 Legal Feasibility	29
+
+3.4 REQUIREMENTS ELICITATION	30
+
+3.4.1 Stakeholder Identification	30
+
+3.4.2 Techniques Used	30
+
+3.4.3 Key Requirements Identified	31
+
+3.5 DATA ANALYSIS	32
+
+3.5.1 User Behavior Patterns	32
+
+3.5.2 Functional Grouping	32
+
+3.5.3 Data Entities and Attributes	33
+
+3.5.4 Workflow Insights	33
+
+3.6 SYSTEM SPECIFICATION	33
+
+3.6.1 Functional Requirements	34
+
+3.6.2 Non-Functional Requirements	35
+
+3.7 REQUIREMENTS ANALYSIS AND MODELING	36
+
+3.7.1 Requirements Dependency and Conflict Analysis	36
+
+3.7.2 Functional Structuring of Requirements	37
+
+3.7.3 Modeling Diagrams	38
+
+3.8 LOGICAL DESIGN	41
+3.8.1 System Architecture	41
+
+The Server	41
+
+The Interaction Flow	41
+
+3.8.2 Control Flow and Process Design	44
+
+3.8.3 Design for Non-Functional Requirements	48
+
+3.9 PHYSICAL DESIGN	48
+
+3.9.1 Database Design	48
+
+3.9.2 User Interface Design	49
+
+CHAPTER 4: SYSTEM IMPLEMENTATION AND TESTING,	53
+
+CONCLUSIONS AND RECOMMENDATIONS	53
+
+4.1 INTRODUCTION	53
+
+4.2 ENVIRONMENT AND TOOLS	53
+
+4.2.1 Backend (Server-Side Logic)	53
+
+4.2.2 Middleware (USSD Gateway Integration)	54
+
+4.2.3 Database	54
+
+4.2.4 Deployment Environment	54
+
+4.3 SYSTEM CODE GENERATION	55
+
+4.3.1 Key Process: USSD Entry Point	55
+
+4.3.2 Key Process: Registration	56
+
+4.3.3 Key Process: Fertilizer Purchase with Transport Option	57
+
+4.3.4 Key Process: MPesa STK Push Integration	58
+
+4.3.5 Key Process: Produce Sale Listing	59
+
+4.4 TESTING	61
+
+4.4.1 Testing Strategy	61
+
+4.4.2 Testing Suite and Tools	62
+
+4.4.3 Sample Test Cases and Results	63
+
+4.4.4 Screenshots of Tests	64
+
+4.5 USER GUIDE	65
+
+4.6 CONCLUSIONS	67
+
+4.7 RECOMMENDATIONS	69
+
 Cases
 KALRO: Kenya Agricultural and Livestock Research Organization	1
+
 USSD: Unstructured Supplementary Service Data	6
+
 SMS: Short Message Service	6
+
 API: Application programming interface	19
+
 IDE: Intergrated Development Environment	19
+
 UI: User Interaction	19
+
 UX: User Experience	19
 
-Figure 1 Communication Gaps	4
+Figure 1 Communication Gaps	3
+
 Figure 2 Agile Planning	10
-Figure 3 Microservice Architecture	19
 
-Table 1 Budget	13
-Table 2 Gantt chart	14
-Table 3 Communication model	16
-Table 4 Microservices Intergration	21
+Figure 3 Microservice Architecture	22
 
+Figure 4 Use Case	38
 
+Figure 5 Data Flow Diagram	39
+
+Figure 6 Class Diagram	40
+
+Figure 7 Client-Server	43
+
+Figure 8 Sequence Diagram	45
+
+Figure 9 Activity Diagram	47
+
+Figure 10 Wireframe	52
+
+Figure 11 Screenshots	64
+
+Table 1 Budget	15
+
+Table 2 Gantt chart	16
+
+Table 3 Data Entities and Attributes	33
+
+Table 4 Non-Functional Requirements	36
+
+Table 5 Modules	37
+
+Table 6 Database Schema	49
+
+Table 7 Input and Output forms	50
+
+Table 8 Test Suite and Tools	62
+
+Table 9 Test Results	63
 
 
 
@@ -127,100 +337,138 @@ Table 4 Microservices Intergration	21
 
  
 
-**CHAPTER ONE:**
-**1.0 INTRODUCTION**.
+CHAPTER ONE:
+1.0 INTRODUCTION.
 
-Effective communication is crucial for timely access to services, resources, and technical advice between farmers and agricultural support institutions worldwide. Governments in a number of nations have set up platforms to facilitate communication between service providers and farmers by utilising technology. When requesting government services to support their farming operations, Kenyan farmers who are registered with the Kenya Agricultural and Livestock Research Organisation (KALRO) still face substantial communication obstacles. 
+Microservices architecture has emerged as a modern approach to building scalable, modular, and resilient systems, enabling organisations to break down complex applications into smaller, independently deployable services. This approach enhances maintainability, scalability, and flexibility, making it well-suited for solving sector-specific challenges that require efficient, adaptive solutions.
+In Kenya’s agricultural sector, particularly within the Kenya Agricultural and Livestock Research Organisation (KALRO), farmers face persistent communication barriers when seeking government support, technical advice, and resources. The absence of a centralised, responsive platform has led to delays, miscommunication, and reduced access to vital agricultural services—issues compounded in rural areas with limited internet connectivity. Current communication channels are fragmented and inefficient, making it difficult for KALRO to deliver timely and targeted support.
+This project applies microservices architecture to address these communication gaps by developing a centralized ticketing system tailored for KALRO’s operations. Core functions—such as request handling, enquiry tracking, notifications, and analytics—are implemented as independent, interoperable services. By enabling real-time request tracking, quick responses from officials, and seamless integration with other agricultural systems, the proposed solution aims to enhance farmer–government interactions, improve service accessibility, and support sustainable agricultural productivity.
+1.2 PROJECT OVERVIEW.
 
-In spite of the critical role that KALRO plays in agricultural innovation and research, delays, misunderstandings, and restricted access to resources that farmers require to maximise their farming methods have been caused by the lack of an organised, responsive communication platform. These difficulties are more severe in rural locations where farmers may have less access to the internet, making it more difficult for them to get help from government organisations. The current disjointed and decentralised communication channels are the root of the issue, as they make it challenging for KARLO and government agencies to effectively meet the demands of farmers. As a result, Kenya's agriculture is in dire need of a more efficient and effective communication infrastructure to help it flourish and last.
+Microservices architecture, while offering scalability, flexibility, and modularity, also presents unique challenges in implementation—particularly in environments where systems must operate under constraints such as unreliable connectivity, diverse user needs, and high demand for service responsiveness. The problem lies in designing a microservices-based solution that maintains efficient communication, ensures interoperability between services, and remains reliable even in resource-limited settings.
+This project addresses that broader microservices communication challenge through a case study in Kenya’s agricultural sector. Within the Kenya Agricultural and Livestock Research Organisation (KALRO), farmers face delays, fragmented responses, and limited access to services due to disjointed communication channels. By applying microservices principles to this scenario, the project explores how independent services—such as request handling, notification delivery, and data analytics—can be orchestrated to create a coherent, responsive platform that overcomes both technical and operational barriers.
+The KALRO case provides a real-world context to examine microservices-related issues such as service discovery, API communication reliability, fault tolerance, and deployment in low-bandwidth environments. The findings from this implementation aim to contribute to microservices best practices, offering insights into how such architectures can be optimised for sectors where timely information exchange directly impacts productivity and livelihoods.
 
+1.3 STATE OF THE PROBLEM.
 
+While microservices architecture offers significant advantages—such as scalability, independent deployment, and ease of integration—it also introduces critical challenges in maintaining seamless communication and service coordination. In distributed microservices environments, ensuring that independent services exchange information reliably, maintain data consistency, and respond in a timely manner can be complex. Issues such as network latency, service discovery failures, message loss, and inconsistent error handling often degrade system performance. These challenges are magnified in settings with unreliable connectivity, high request volumes, or diverse end-user access points.
+The Kenya Agricultural and Livestock Research Organisation (KALRO) provides a real-world context where these microservices communication challenges are highly relevant. Farmers seeking government services through KALRO face delays, fragmented feedback, and inconsistent responses—symptoms that parallel common microservices communication breakdowns. In rural areas, poor internet access further compounds the problem, as message delivery between services can fail or be delayed, leading to incomplete or inaccurate transaction processing.
+This situation underscores a broader microservices problem: how to design and implement a distributed system that ensures reliable, low-latency communication between services in environments where infrastructure constraints and user diversity are significant. Addressing this problem is essential not only for improving KALRO’s farmer–government interactions but also for contributing to microservices design strategies that perform effectively in similar high-demand, low-resource contexts.
 
+ <img width="1950" height="1508" alt="image" src="https://github.com/user-attachments/assets/ab635227-2944-41f8-833f-f016198da36d" />
 
-**1.2 PROJECT OVERVIEW.**
-
-The project focuses on addressing communication challenges faced by farmers registered under the Kenya Agricultural and Livestock Research Organization (KALRO) when seeking services and support from the government. Globally, farmers and government organisations are communicating more easily thanks to the growing use of technology, which makes it possible for them to efficiently access resources, services, and advice related to agriculture. Ticketing methods and digital platforms have been effectively employed in industrialised nations to handle farmer enquiries, guaranteeing prompt responses and efficient service delivery.
-
- However, a lack of internet connectivity, fragmented communication channels, and unpredictable service response times pose serious challenges for many Kenyan farmers, especially those in remote areas. The goal of this project is to create a centralised ticketing system, a solution based on database administration, task automation, and user-friendly interface design. Through friendly platforms , such a system will enable farmers to submit, track, and manage their service requests, assuring inclusion for those with limited digital access. In order to support the long-term viability of Kenya's agriculture industry, the initiative seeks to increase overall agricultural productivity, improve communication efficiency, and respond promptly.
-
-
-
-
-
-**1.3 STATE OF THE PROBLEM.**
-
-In the agricultural sector, efficient communication is a critical backbone for service delivery, especially for institutions such as the Kenya Agricultural and Livestock Research Organization (KARLO) that support farmers through microservices like transport, fertilizer distribution, seed distribution, and produce marketing. However, KARLO currently faces a significant communication breakdown across these services, hampering effective coordination, timely service delivery, and ultimately affecting farmers' productivity and incomes.
-Research indicates that in Kenya, up to 40% of agricultural produce is lost post-harvest due to delays in transportation and poor market access (Kenya National Bureau of Statistics, 2023). Additionally, fertilizer and seed distribution inefficiencies have led to a 20% drop in expected yields among smallholder farmers annually (FAO Report, 2023). Interviews with KARLO service managers reveal that one major contributing factor to these inefficiencies is fragmented, slow, and unreliable communication between service providers and farmers. Many communications are still reliant on basic SMS alerts, physical notices at service centers, and sporadic in-person visits, which are neither scalable nor sufficient for the demands of modern agriculture.
-The communication problem has been further exacerbated by the increasing adoption of smartphones, mobile money, and digital marketplaces among farmers, creating a digital divide between what farmers expect and the outdated methods used by KARLO. While digital solutions are available, KARLO’s current communication systems have not evolved to match these trends, resulting in missed opportunities, farmer dissatisfaction, and overall reduced impact of KARLO’s farmer support initiatives.
-The magnitude of this problem is seen in logistical mismatches—farmers receiving late input deliveries, produce rotting before reaching the market, and farmers being unaware of transport schedules or market opportunities. This not only increases operational costs for KARLO but also directly reduces the farmers’ earning potential and trust in the services provided.
- 
 Figure 1 Communication Gaps
-<img width="975" height="754" alt="image" src="https://github.com/user-attachments/assets/64427931-52d1-4cd7-ba5e-b37622718239" />
+
+1.4 PROPOSED SOLUTION.
+
+To address the challenge of maintaining reliable, efficient communication in a microservices environment, this project proposes a fault-tolerant, event-driven microservices architecture designed to ensure seamless interaction between distributed services even in low-resource conditions. The solution leverages asynchronous communication using lightweight message queues to minimise latency, prevent message loss, and enable services to operate independently without blocking requests.
+In the case study context of the Kenya Agricultural and Livestock Research Organisation (KALRO), the architecture decomposes the centralized ticketing platform into modular services—such as request management, notification delivery, authentication, analytics, and reporting—each with its own database and API. A service discovery mechanism ensures that services can dynamically locate and communicate with each other, while circuit breakers and retry strategies handle failures gracefully.
+The system will be deployed with container orchestration tools to manage scaling, load balancing, and failover, ensuring high availability even under fluctuating request volumes. API gateways will be used to standardize external communication, enforce security, and aggregate responses from multiple services for end-users.
+By applying these microservices design patterns, the proposed solution aims to eliminate the communication breakdowns typical in distributed systems, while ensuring that KALRO farmers can submit requests, receive timely feedback, and access agricultural support seamlessly. The approach is adaptable and can be replicated in other sectors that require robust microservices communication in constrained environments.
 
 
 
-
-
-
-
-**1.4 PROPOSED SOLUTION.**
-
-The goal of this project is to create a reliable, centralised ticketing system that is especially made to help farmers who are enrolled under KALRO communicate with government organisations more effectively. The study will investigate cutting-edge communication models and assess the efficacy of ticketing systems put in place in various agricultural contexts across the world, including Brazil and India, where comparable solutions have enhanced agricultural productivity and service delivery. To accommodate farmers in distant locations with limited internet connection, the proposed system will include mobile-based technologies such as SMS, USSD and Web applications going beyond simple digitisation. The system's primary features will allow farmers to submit targeted service requests, monitor the real-time progress of their queries, and get fast replies from the appropriate government agencies. 
-
-To ensure that requests are sent to the right authorities and handled quickly, the system will include clever routing algorithms. This will reduce delays and speed up government response times. Furthermore, the system will make use of data analytics to pinpoint typical problems that farmers encounter, enabling KALRO to decide on resource allocation and policy enhancements with knowledge. In order to ensure sustained and significant results for farmers, the research will concentrate on creating a scalable, user-friendly system that complies with international best practices and caters to the particular requirements of Kenya's agricultural industry.
-
-
-
-
-
-**1.5 OBJECTIVES.**
+1.5 OBJECTIVES.
 
 General Objective.
-1.	To provide a centralised, effective ticketing system that enhances communication between government organisations and farmers who have registered with KALRO, enabling prompt access to agricultural services and assistance.
+1.	To design and implement a reliable, scalable, and fault-tolerant microservices architecture that addresses communication inefficiencies in distributed systems, using the Kenya Agricultural and Livestock Research Organisation (KALRO) as a case study.
 
 Specific Objectives.
-1.	To investigate and examine regional and international agricultural communication system models in order to determine the most effective approaches and technological advancements that may be applied to Kenya.
+1.	To analyse the communication and coordination challenges inherent in microservices architectures, particularly in resource-constrained environments.
 
-2.	To create and implement an intuitive ticketing system that allows farmers to submit, monitor, and get service request responses using SMS and USSD mobile platforms.
+2.	To investigate the existing communication gaps between farmers and KALRO as a practical scenario for applying microservices principles.
 
-3.	To implement the ticketing system, ensuring integration with KALRO and government service workflows, and test its functionality and usability with a pilot group of farmers.
+3.	To design a microservices-based architecture incorporating service discovery, asynchronous communication, and fault-tolerance mechanisms to ensure reliable service interaction.
 
-4.	To assess the system's effectiveness using input from farmers and governmental organisations, and to maximise its responsiveness and efficiency using data from actual usage in real time.
+4.	To implement a case-specific microservices solution enabling farmers to submit requests, track progress, and receive timely updates via mobile platforms.
 
+5.	To evaluate the performance, scalability, and resilience of the proposed architecture under varying connectivity and load conditions.
 
-
-**1.6 RESEARCH QUESTIONS.**
-
-1. What are the global and regional best practices in agricultural communication systems, and how can these be adapted to address the specific communication challenges faced by KALRO-registered farmers in Kenya?
-2. How can existing ticketing systems be customized to cater to the diverse needs of Kenyan farmers, particularly in terms of accessibility via mobile platforms like USSD and SMS?
-3. What are the most critical design considerations for developing an inclusive and user-friendly ticketing system that enhances communication between farmers and government agencies?
-4. How can the proposed ticketing system be effectively integrated with existing KARLO and government service workflows to ensure smooth operations and timely response to farmer inquiries?
-5. What are the most appropriate methods for testing the functionality, usability, and reliability of the ticketing system during a pilot phase with KALRO-registered farmers?
-6. What impact does the use of a centralized ticketing system have on the efficiency of government response times and the overall satisfaction of farmers in accessing agricultural services?
-7. How can feedback from farmers and government agencies be used to continuously optimize and improve the performance and responsiveness of the ticketing system over time?
+6.	To generate insights and best practices for applying microservices in similar high-demand, low-resource contexts beyond agriculture.
 
 
-**1.7 JUSTIFICATION.**
 
-The pressing need to remove the communication obstacles preventing KALRO-registered farmers from receiving crucial government services and assistance for their farming operations serves as the rationale for this study. More than 70% of Kenyans rely on agriculture as their primary source of income, making it imperative for farmers to be able to interact with government organisations in an efficient and effective manner in order to boost sustainability and production. Through the creation of a centralised ticketing system that will expedite communication and allow farmers to receive prompt answers to their questions and service requests, this research aims to assist both government agencies and farmers. 
 
-The suggested approach offers a better organised, responsive, and accessible platform that can accommodate farmers with restricted internet connectivity, directly addressing the fragmentation and inefficiencies in the current system. This project will help close the gap between farmers and agricultural services by providing a new technological approach that is specifically tailored to the needs of rural farmers. This will ultimately improve service delivery, enhance agricultural productivity, and support Kenya's larger goal of food security. The rising reliance on technology worldwide to optimise agricultural practices makes this research more relevant, and it offers a timely answer that is in line with Kenya's agriculture sector's digital transition.
+1.6 RESEARCH QUESTIONS.
+
+1. What global and regional agricultural communication practices can inform the design of USSD-based systems for feature phone users in Kenya?
+2. What are the most critical design considerations—such as menu simplicity and confirmation prompts—for creating an inclusive USSD system for farmers? 
+3. How can admin-specific dashboards and localized data filters support the integration of the USSD system into KALRO’s operational workflows?  
+4. What testing methods best validate usability, trust, and transaction accuracy in USSD applications during pilot programs with KALRO-registered farmers?  
+5.  What impact does a centralized support and transaction tracking system have on government responsiveness and farmer satisfaction in agricultural service delivery?  
+6. How can transaction data, user flow behaviour, and farmer feedback be used to iteratively improve the system’s navigation, pricing clarity, and feature relevance? Which of the following feedback sources should be used for improving the system?
 
 
 
 
 
-**1.8	METHODOLOGY.**
 
-Agile methodology will be used in the planned study and system development to address communication problems that farmers registered under KALRO encounter when corresponding with the government. Through constant feedback from farmers and government stakeholders, the ticketing system will be built gradually thanks to this iterative process, which will also enable system requirements to be refined. The development process will start with a comprehensive needs study that makes use of surveys, interviews, and an examination of current communication techniques. Tools like Sublime as an IDE, Mindview for project tracking, and Microsoft Teams or Slack for communication will be used in the system's construction. Key features including ticket creation, categorisation, and communication channels will be developed with each sprint. User testing and feedback loops will then be conducted. Agile is preferred for projects involving a variety of stakeholders, such as farmers and government officials, because of its adaptability to changing requirements. The research will make sure the system satisfies end users' practical needs by including them in every step of the process. Problem identification will be the first step in the study life cycle. Next comes planning, system design, development, testing, deployment, and iterative improvements based on user input.
+
+
+
+
+
+1.7 JUSTIFICATION.
+
+The adoption of microservices architecture in modern software development has transformed how complex systems are built, deployed, and maintained. However, the distributed nature of microservices introduces significant communication and coordination challenges, particularly in environments with limited infrastructure, fluctuating network reliability, and diverse user access points. Addressing these challenges is essential to unlocking the full potential of microservices in critical service delivery contexts.
+The Kenya Agricultural and Livestock Research Organisation (KALRO) presents an ideal case study for this problem. Farmers relying on KALRO’s services often face delays, fragmented responses, and restricted access to essential agricultural support due to disjointed communication channels. These issues mirror common pain points in microservices communication, such as message loss, service discovery failures, and inconsistent data propagation—especially in rural areas with unstable connectivity.
+By designing and implementing a microservices architecture that is fault-tolerant, scalable, and adaptable to low-resource conditions, this project not only aims to solve KALRO’s communication inefficiencies but also to contribute to best practices in microservices design. The solution’s relevance extends beyond agriculture, offering a framework that can be adapted to other sectors where reliable service interaction is critical for operational efficiency and stakeholder satisfaction.
+
+1.8 METHODOLOGY
+
+This project adopts the Agile Software Development Methodology to design, implement, and evaluate a microservices architecture aimed at solving distributed communication challenges, using the Kenya Agricultural and Livestock Research Organisation (KALRO) as a case study. Agile is selected due to its iterative approach, flexibility in accommodating changes, and suitability for modular development, which aligns with the principles of microservices.
+1.	Agile Framework Selection
+•	Scrum is chosen as the framework to guide development, with work divided into short iterations (sprints) of 2–3 weeks.
+•	Core roles:
+o	Product Owner – Represents stakeholders (KALRO and farmers) and prioritizes backlog items.
+o	Scrum Master – Facilitates Agile practices and removes development impediments.
+o	Development Team – Designs, codes, tests, and deploys microservices.
+2.	Project Initiation & Backlog Creation
+•	Identify high-level requirements through stakeholder workshops and interviews with KALRO staff and farmers.
+•	Translate requirements into user stories (e.g., “As a farmer, I want to track my request so that I know its progress”).
+•	Populate the Product Backlog with features mapped to individual microservices such as Request Management, Notification Service, Analytics, and Authentication.
+3.	Sprint Planning & Execution
+•	Break down backlog items into Sprint Backlog tasks for implementation within each sprint.
+•	Prioritize tasks addressing core communication reliability issues in microservices, such as service discovery, fault tolerance, and message queuing.
+•	Each sprint delivers a functional increment, such as a working version of a microservice or a tested API endpoint.
+4.	Development Approach
+•	Apply Test-Driven Development (TDD) to ensure each microservice meets its acceptance criteria before integration.
+•	Implement services as independently deployable containers, enabling parallel development and faster iteration.
+•	Use asynchronous messaging and API Gateway integration in early sprints to mitigate communication breakdowns.
+5.	Review & Feedback
+•	Conduct Sprint Reviews to demonstrate completed features to KALRO representatives and gather feedback.
+•	Hold Retrospectives to identify process improvements for the next sprint.
+6.	 Integration & Continuous Delivery
+•	Integrate microservices gradually, validating communication reliability after each integration step.
+•	Use Continuous Integration/Continuous Deployment (CI/CD) pipelines for automated builds, testing, and deployment.
+7.	Pilot Testing & Iteration
+•	Deploy the system in a small KALRO operational region for real-world testing.
+•	Collect feedback from farmers and staff to refine service communication handling, fault tolerance, and user experience.
+•	Iterate improvements in subsequent sprints until performance, reliability, and usability meet the acceptance criteria.
+8.	Final Deployment & Knowledge Transfer
+•	Roll out the fully integrated microservices system to all targeted KALRO regions.
+•	Provide training to KALRO staff and documentation for system operation and maintenance.
                                
 
- 
+     <img width="1800" height="2492" alt="image" src="https://github.com/user-attachments/assets/569a718a-96d6-46ca-9f22-2833809352f1" />
+  
 Figure 2 Agile Planning
 
 
+1.9 SCOPE.
 
-<img width="938" height="698" alt="image" src="https://github.com/user-attachments/assets/0306dba0-0897-4bee-a0e3-bc19bdb4d479" />
+This project is limited to the design, implementation, and evaluation of a microservices architecture aimed at addressing communication and coordination challenges in distributed systems, with the Kenya Agricultural and Livestock Research Organisation (KALRO) serving as the case study. The primary focus is on solving technical issues common in microservices—such as service discovery, message delivery reliability, fault tolerance, and scalability—rather than on general system digitization or organizational restructuring.
+The system to be developed will consist of independent, loosely coupled services for request handling, enquiry tracking, notification delivery, authentication, and analytics. It will be accessible via mobile platforms, with provisions for low-connectivity areas through USSD/SMS integration. The project will cover:
+•	Analysis of microservices communication challenges in the context of KALRO’s farmer–government interactions.
+•	Design of a modular, fault-tolerant architecture incorporating asynchronous communication and resilience patterns.
+•	Implementation of core services sufficient to demonstrate reliable inter-service communication and user request handling.
+•	Testing under varied connectivity and load conditions to assess system reliability, scalability, and responsiveness.
+•	Pilot deployment in a selected operational region for real-world evaluation.
+The project will not cover:
+•	Replacement or overhaul of KALRO’s existing back-office systems.
+•	Development of unrelated agricultural management tools beyond the communication-focused microservices.
+•	Large-scale deployment to all regions during the initial project phase.
+The outcomes are intended to provide both a functional case-specific solution for KALRO and generalizable insights into deploying microservices effectively in low-resource, high-demand environments.
 
 
 
@@ -230,9 +478,23 @@ Figure 2 Agile Planning
 
 
 
-**1.9	SCOPE.**
 
-The purpose of this project is to solve the communication difficulties that farmers who are registered with the Kenya Agricultural and Livestock Research Organisation (KALRO) encounter when attempting to obtain government services that facilitate their farming operations. The project's geographic scope is restricted to Kenyan farmers, especially those in rural areas who depend on KALRO's services yet encounter difficulties getting support because of ineffective communication routes. A ticketing system, which is the suggested remedy, will enable organised contact between farmers and the government. This study does, however, recognise certain possible drawbacks, including the lack of complete or accurate data regarding farmer demands, the difficulty of accessing dependable technology in rural areas, and resource limitations that might prevent the full deployment of advanced system features. The project will not focus on advanced integrations or long-term system scalability; instead, it will limit itself to the design, development, and initial implementation of a basic ticketing system that enables farmers to submit, track, and get responses to service requests.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -245,6 +507,7 @@ The purpose of this project is to solve the communication difficulties that farm
 
 
 Appendices
+
 A.	Project Resources.
 The success of the intelligent ticketing system for KALRO farmers will require the following resources:
 Human Resources:
@@ -263,9 +526,6 @@ API Integration Tools: To connect the ticketing system with existing government 
 Other Resources:
 Training Material: Documentation and videos to train farmers and support staff.
 Community Outreach: Posters, brochures, and training sessions to introduce the system to KARLO farmers.
-
-
-
 
 B.	Budget
 
@@ -311,117 +571,128 @@ Farmer Training Sessions	3 weeks	Jan 28, 2026	Feb 25, 2026
 Phase 6: Monitoring & Support	Ongoing (6 months)	March 1, 2026	Sept 1, 2026		
 Table 2 Gantt chart
 
-**CHAPTER TWO**
-**2.1 INTRODUCTION.**
-
-This chapter reviews existing literature relevant to addressing communication challenges between farmers and government institutions, focusing on the development of a ticketing system for farmers registered under the Kenya Agricultural and Livestock Research Organization (KALRO). For farmers to receive services like subsidies, technical assistance, and market information on time, there must be effective communication between government agencies and farmers. However, many farmers encounter difficulties in navigating these procedures. In order to improve service delivery and streamline communication, industries like customer service, healthcare, and education have been using ticketing systems and other technological solutions more and more in recent years. With a particular emphasis on the function of digital platforms in promoting contacts between farmers and the government. With a particular emphasis on the function of digital platforms in promoting contacts between farmers and the government, this literature review attempts. This literature review aims to explore the current state of communication technology in agricultural settings, focusing on the role of digital platforms in facilitating farmer-government interactions. The goals are to pinpoint areas where current solutions fall short, evaluate whether a ticketing system can fill these gaps, and offer advice that will direct the creation and execution of the suggested system.
 
 
 
 
-**2.2 THEORETICAL REVIEW.**
-This project’s theoretical review focuses on key concepts related to communication technology, service delivery systems, and ticketing systems within a microservices architecture framework, aimed at bridging the communication gap between farmers and government institutions such as KALRO. Critical variables in this context include digital communication platforms, ticket management systems, user engagement models, and service response frameworks, all adapted to operate in a modular and distributed microservices environment.
-Ticketing systems, commonly used in customer service and IT service management, are engineered to optimize the submission, tracking, and resolution of service requests. When reimagined through a microservices lens, ticketing systems can be broken into independent, specialized services — each responsible for a specific aspect of ticket lifecycle management (e.g., submission, categorization, routing, resolution, and feedback collection). This modular approach aligns well with the needs of agriculture-focused institutions like KALRO, ensuring scalability, flexibility, and resilience in service delivery.
-The project will investigate several theoretical communication models relevant to microservices-based systems:
-Communication Model	Microservices Interpretation
-Centralized Service Systems	A master ticket orchestration service manages all ticket submissions and service routing, ensuring consistent workflows.
-Decentralized Peer-to-Peer Communication	Individual microservices (e.g., Transport, Seed Distribution) communicate directly with farmers and with each other through well-defined APIs, minimizing central control.
-Automated Response Systems	Microservices integrate AI modules for automated triage, initial responses, and basic problem resolution, especially for frequent or low-complexity enquiries.
-Table 3 Communication model
-Each approach has foundational assumptions and distinct implications in a microservices context:
-•	Centralized orchestration offers strong control, consistency, and policy enforcement but can introduce bottlenecks and reduce system agility.
-•	Decentralized service interactions improve responsiveness and scalability but require robust API governance to prevent disorganized service behavior.
-•	AI-driven automation boosts efficiency and allows microservices to manage high volumes of standard queries; however, it may lack the nuance necessary for complex, context-specific farmer support cases.
-In a microservices-based ticketing and communication system, careful design of service boundaries, clear API contracts, and strong integration layers are necessary to maximize the benefits while minimizing risks of fragmentation or inefficiency. By leveraging microservices theory, the project aims to build a dynamic, resilient, and farmer-centric communication platform capable of adapting to the evolving needs of agricultural service delivery in Kenya.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CHAPTER TWO
+
+2.1 INTRODUCTION.
+
+This chapter reviews existing literature relevant to the application of microservices architecture in solving communication and coordination challenges in distributed systems, with a focus on its potential use in improving agricultural service delivery. The review examines the conceptual foundations of microservices, the common technical issues associated with their implementation, and the strategies developed to address these challenges. It also considers the role of technology in enhancing farmer–government interactions, drawing on both global and Kenyan case studies to highlight practical lessons and gaps in current approaches.
+The chapter is organised into thematic sections covering the evolution of software architectures from monolithic to microservices, key characteristics and advantages of microservices, common communication problems in distributed environments, and patterns or frameworks for achieving reliable inter-service communication. It further reviews existing IT solutions in agriculture, identifying where they succeed and where they fail in ensuring timely, reliable, and accessible communication for end-users. By synthesising these insights, this chapter provides the theoretical and practical grounding for designing the proposed microservices-based solution in the KALRO case study.
+
+2.2 THEORETICAL REVIEW.
+
+Microservices architecture is a software design paradigm in which an application is divided into multiple, small, independently deployable services that work together to form a complete system (Newman, 2015). Unlike monolithic architectures—where all functionalities are bundled into a single deployable unit—microservices allow each component to be built, deployed, and scaled independently. This project specifically focuses on asynchronous, event-driven microservices, which communicate through message queues or event streams rather than direct synchronous calls.
+The theoretical foundation of microservices lies in the principle of modularity—a concept proposed by Parnas (1972)—which advocates breaking complex systems into smaller, more manageable modules with clear interfaces. In the microservices context, each module (service) is responsible for a specific business capability. This modularity supports faster development, independent scaling, and easier maintenance (Fowler & Lewis, 2014).
+Asynchronous, event-driven microservices operate on the principle of loose coupling (Erl, 2005), where services interact indirectly through events or messages rather than direct API calls. This architecture enhances resilience and fault tolerance because the failure of one service does not immediately halt the functioning of others. Chappell (2009) describes this as event-driven architecture (EDA)—a pattern in which services publish events when something happens and other services subscribe to those events to act accordingly.
+However, distributed communication in microservices introduces new challenges. According to Tanenbaum and Van Steen (2017), network-based interactions face latency, message loss, and partial failures. In the agricultural sector—particularly in rural areas with poor network stability—these issues can severely disrupt real-time communication. For instance, in the Kenya Agricultural and Livestock Research Organisation (KALRO) farming sector, delays or failures in message delivery between farmer-facing services and backend services can result in missed updates, delayed responses, and reduced trust in the system.
+By applying asynchronous, event-driven microservices, the proposed approach aims to address these communication challenges by enabling non-blocking service interactions, ensuring that farmer queries, notifications, and updates are transmitted reliably, even under unstable connectivity conditions. This aligns with the broader theoretical goal of microservices: to build scalable, resilient, and loosely coupled systems that support complex organisational processes while maintaining flexibility.
 . 
 
 
 
 
+2.3 CASE STUDY REVIEW.
+The Kenya Agricultural and Livestock Research Organisation (KALRO) operates a nationwide network that provides farmers with research findings, agricultural advice, and market information. However, the current communication systems within KALRO’s farming information services are largely centralised and partially monolithic, leading to delays in information dissemination, limited real-time interaction, and difficulties in scaling services for different regions.
+Field assessments reveal that KALRO’s digital platforms—such as USSD services, SMS notifications, and web portals—often face challenges when processing and delivering updates to farmers simultaneously across multiple regions. These challenges stem from:
+•	Synchronous dependency between modules, where a failure or delay in one service halts the entire communication process.
+•	Limited scalability, making it hard to handle high message volumes during peak farming seasons (e.g., planting or harvesting).
+•	Network instability in rural areas, which disrupts direct API calls between services.
+Globally, similar agricultural organisations have adopted asynchronous, event-driven microservices to address such issues. For instance, the Indian Council of Agricultural Research (ICAR) implemented an event-based messaging platform that decouples the farmer communication interface from backend processing services. This allowed farmer queries to be queued and processed even during connectivity downtimes, improving reliability and trust.
+In East Africa, the Uganda National Agricultural Advisory Services (NAADS) tested a message broker-based microservice approach to handle farmer queries. The system relied on event queues to store messages when connectivity was low, delivering them once a stable connection was available. This reduced communication delays by over 40% (NAADS Report, 2021).
+For KALRO, adopting a similar asynchronous microservice architecture could ensure that messages between farmers, researchers, and support teams are delivered reliably and promptly. In practice, this would involve decoupling core modules (e.g., Farmer Query Service, Research Data Service, Notification Service) and integrating them via an event broker such as Apache Kafka or RabbitMQ. By doing so, the system would be resilient to partial failures and adaptable to Kenya’s variable network conditions, directly addressing the communication gap problem identified in the study.
 
+2.4 INTERGRATION AND ARCHITECTURE.
 
+The proposed system for improving farmer–KALRO communication leverages an asynchronous microservice architecture, integrating Africa’s Talking, Daraja API, MongoDB, and a Python-based server to ensure seamless, reliable, and scalable operations. The design addresses the communication gap by decoupling core services and enabling event-driven message handling.
 
-**2.4 CASE STUDY REVIEW.**
-Effective communication systems have been successfully deployed in agricultural sectors globally to address logistics and service delivery issues. In the Kenyan context, particularly within institutions similar to the Kenya Agriculture and Livestock Research Organization (KARLO), there have been notable applications of digital technologies to bridge communication gaps between service providers and farmers.
-1. eKilimo Platform (Kenya)
-Application:
-eKilimo is a mobile and web-based platform that connects farmers to agricultural extension services, markets, and input suppliers. It offers updates on weather, market prices, and agricultural best practices.
-Successes:
-•	Provided real-time access to critical information, leading to better farming decisions.
-•	Increased market access by connecting farmers directly to buyers.
-•	Enabled digital record-keeping and farmer profiling.
-Misses:
-•	Limited penetration in remote areas with low internet access.
-•	Language barriers since much of the content was initially in English.
-•	Communication was more informational than interactive, lacking real-time service scheduling and feedback loops essential for microservices like transportation logistics
-2. M-Farm (Kenya)
-Application:
-M-Farm is a mobile service that allows farmers to receive real-time market prices, connect to buyers, and find affordable inputs.
-Successes:
-•	Empowered farmers with bargaining power by providing transparency on market prices.
-•	Reduced exploitation by middlemen.
-•	Mobile-based communication suited Kenyan rural areas with high mobile phone penetration.
-Misses:
-•	Limited integration with logistics services like fertilizer or seed distribution.
-•	Focused more on produce marketing and not holistic service delivery (transport, input distribution).
-•	Not designed specifically for institutional service coordination like KARLO’s internal needs.
+2.4.1 Architectural Overview
 
-3. Digital Green (Global, with Pilots in Kenya)
-Application:
-Digital Green uses video-based agricultural extension services and community-led communication methods to train farmers and inform them about best practices.
-Successes:
-•	High farmer engagement due to localized language and context.
-•	Scalable model for information dissemination.
-•	Built trust within farming communities.
-Misses:
-•	Lacked a two-way communication feature necessary for dynamic services like transport scheduling.
-•	Not linked directly to input supply chain management (e.g., fertilizer or seed distribution).
+The architecture consists of independent services that interact via a central message/event broker pattern implemented in Python. Each service is deployed as a standalone unit but integrated through the publish/subscribe approach.
+Key Microservices:
+1.	USSD/SMS Communication Service (Africa’s Talking)
+o	Receives farmer requests and inputs via USSD or SMS.
+o	Forwards requests as events to the Message Broker for processing.
+o	Uses Africa’s Talking APIs to ensure compatibility with feature phones, making it accessible in rural areas.
+2.	Payment Verification Service (Daraja API)
+o	Integrates Safaricom’s M-Pesa for payment handling.
+o	Operates independently from other services.
+o	Publishes payment confirmation events to the broker, triggering order fulfilment or service access.
+3.	Data Management Service (MongoDB)
+o	Stores farmer profiles, KALRO research data, transaction logs, and communication records.
+o	Subscribes to data update events and writes changes asynchronously.
+o	Enables retrieval of historical interaction data for analytics.
+4.	Notification Service
+o	Listens for updates from other services (e.g., payment success, research advice ready).
+o	Sends outbound messages to farmers via Africa’s Talking SMS API.
+5.	Python Server (Backend Event Controller)
+o	Acts as the orchestration layer managing event flow between services.
+o	Implements the publish/subscribe and message queue logic.
+o	Integrates with MongoDB, Daraja API, and Africa’s Talking simultaneously without creating direct service dependencies.
 
-4. Safaricom's DigiFarm (Kenya)
-Application:
-DigiFarm is a mobile platform providing farmers access to inputs, loans, insurance, and advisory services via USSD codes and smartphone apps.
-Successes:
-•	Wide reach due to partnership with Safaricom, Kenya’s leading mobile network operator.
-•	Integrated value chain from input purchase to sales, improving service delivery.
-•	Affordable and accessible even for smallholder farmers.
-Misses:
-•	Limited customization for specific institutional microservices like KARLO’s segmented transport and distribution services.
-•	Data privacy concerns and reluctance among older farmers to fully engage digitally.
-These case studies show that while Kenya has seen impressive advances in digital agriculture communication platforms, none fully address the comprehensive, real-time, two-way communication needs for service-oriented microservices (transport, fertilizer and seed distribution, market access) within an institution like KARLO. Current solutions either focus on information dissemination or market pricing but rarely integrate full logistics coordination or dynamic service feedback, which are essential for efficient operation of KARLO’s services.
-Therefore, there is a clear opportunity to design a solution that provides real-time, interactive, farmer-institution communication — customized specifically for logistical and service needs within KARLO's operations.
+2.4.2 Integration Workflow
 
-**2.5 INTERGRATION AND ARCHITECTURE.**
+1.	Farmer Request Stage
+o	A farmer dials the USSD code or sends an SMS.
+o	Africa’s Talking forwards the request to the Communication Service in the Python backend.
+2.	Processing Stage
+o	The backend publishes the request as an event to the Message Broker.
+o	Relevant services (e.g., Research Data Service, Payment Service) subscribe and process the request independently.
+3.	Payment Handling
+o	If payment is needed, the Payment Service triggers the Daraja API for M-Pesa checkout.
+o	Upon success, it publishes a "payment confirmed" event.
+4.	Response Stage
+o	The Notification Service consumes the final output event and sends the response back via Africa’s Talking.
+o	MongoDB logs the entire interaction for records.
+2.4.3 Benefits of the Technology Stack
+•	Africa’s Talking – Ensures farmers in rural areas can access the system without internet via USSD/SMS.
+•	Daraja API – Provides secure, automated mobile money transactions without requiring manual processing.
+•	MongoDB – Offers a flexible NoSQL database for storing diverse agricultural and communication data in real-time.
+•	Python Server – Supports asynchronous event processing, making the system resilient to slow network conditions and individual service failures.
+ <img width="1592" height="1592" alt="image" src="https://github.com/user-attachments/assets/ebd4ed97-3cc7-4e25-bc81-19edff2a1884" />
 
-For KALRO farmers, the architecture and integration of a Service Enquiry Ticket System must be carefully designed to guarantee seamless implementation and full compatibility with existing agricultural support systems. A central integration strategy involves linking the ticketing system with government service portals and KALRO’s existing database of registered farmers, enabling smooth information flow between farmers, KALRO officers, and external service providers.
-To ensure inclusivity and accessibility, especially for farmers in remote areas with limited internet access, the system will integrate with SMS gateways and mobile applications, offering both offline and online access modes. Farmers will be able to create and track service enquiries via simple USSD codes, SMS, mobile apps, or a web portal. In addition, API-driven integration will enable real-time synchronization with government platforms, such as agricultural subsidy programs and technical advisory services, ensuring up-to-date service tracking and status reporting.
-In terms of system design, the solution will adopt a cloud-based microservices architecture. Each agricultural microservice and platform function will operate independently but integrate through secure APIs to enable seamless coordination. Below is a table showing the proposed microservices:
-
-Microservice	Description
-Transport Microservice	Manages logistics scheduling, transport booking, and produce movement tracking.
-Fertilizer Distribution Microservice	Handles fertilizer order placement, distribution tracking, and stock management.
-Seed Distribution Microservice	Facilitates seed order requests, delivery tracking, and quality assurance updates.
-Produce Marketing Microservice	Connects farmers to buyers, manages market listings, and tracks sale outcomes.
-Table 4 Microservices Intergration
-Each of these core agricultural services will operate as an independent microservice component, allowing for modular development, deployment, and scaling without disrupting the operation of the entire platform. For example:
-•	A Ticket Submission Service will manage farmer enquiries across transport, seeds, fertilizers, and marketing.
-•	A Response Management Service will assign and track agent responses based on ticket type and urgency.
-•	An Alerts and Notifications Service will handle automated updates via SMS, email, or mobile push notifications based on ticket progress.
-•	A Farmer Profile and Data Service will securely manage farmer records, past ticket histories, and service preferences.
-
-Security will be enforced through:
-•	Role-Based Access Control (RBAC)
-•	Secure API Gateways
-•	End-to-End Encryption
-•	Audit Trails for service requests and responses.
-This microservices approach ensures that KALRO can deliver real-time, efficient, farmer-centric service communication, positioning the platform for future expansion and integration with emerging agricultural technologies.
-
-
-
- 
 Figure 3 Microservice Architecture
 
 
-<img width="973" height="410" alt="image" src="https://github.com/user-attachments/assets/c6af79b4-cd7f-4d04-bd41-77fde44c0f6c" />
+2.5 SUMMARY.
+
+This case study focuses on addressing microservice-specific challenges in farmer service platforms, particularly issues of service communication, fault tolerance, data consistency, and performance monitoring. While a microservices approach offers clear benefits such as scalability, flexibility, and easier integration with emerging technologies, it also brings significant complexities in coordinating distributed services, ensuring consistent data flow, and maintaining optimal system performance under varying loads. The proposed solution adopts a loosely coupled, resilient microservice architecture featuring an API Gateway for unified access, a Service Registry for dynamic service discovery, a Message Broker for asynchronous communication, containerization for deployment consistency, and robust monitoring tools to track performance and detect failures early. These design choices aim to enable independent service deployment, minimize downtime, improve fault isolation, and ensure the platform can evolve without major disruptions. Development follows the Agile methodology, emphasizing iterative sprints, continuous integration and deployment (CI/CD), and close stakeholder collaboration, ensuring rapid delivery of functional components, faster issue resolution, and long-term maintainability.
+
+2.6 RESEARCH GAPS.
+
+Optimized Communication Models – Limited research on low-latency, high-reliability communication frameworks tailored for microservices in resource-constrained or rural network environments.
+Fault Tolerance in Agricultural Systems – Few studies address how microservices can recover from failures in farmer service platforms without disrupting ongoing transactions.
+Data Consistency Across Distributed Services – Insufficient solutions for maintaining strong or eventual consistency when services span different databases and geographic regions.
+Monitoring and Predictive Maintenance – Lack of predictive monitoring models that can proactively detect and resolve service degradation before it impacts end-users.
+Cost-Efficient Scaling – Minimal exploration of scaling strategies that balance performance and operational costs, especially for systems with seasonal usage spikes.
+Security and Compliance – Limited frameworks addressing microservice security in sensitive agricultural data handling, particularly in line with local regulations.
 
 
 
@@ -439,9 +710,6 @@ Figure 3 Microservice Architecture
 
 
 
-**2.6 SUMMARY.**
-
-The literature analysis concludes by emphasizing the role that digital communication platforms—like ticketing systems—play in enhancing service delivery and filling in communication gaps across a range of industries, including agriculture. The evaluation highlights how a service enquiry ticket system, which centralizes requests, tracks responses, and improves transparency, can expedite interactions between KALRO farmers and government services. Case studies from the agricultural and other industries show how successful similar systems may be in increasing productivity, but issues with digital literacy, technology accessibility, and system responsiveness still exist. Possible architectural frameworks are revealed by theoretical models of automated, decentralized, and centralized systems; a microservices-based, cloud-integrated architecture emerges as a versatile and scalable option. This assessment highlights potential implementation-related issues and lays the groundwork for creating a ticketing system that is safe, easily accessible, and customized to meet the specific requirements of rural farmers.
 
 
 
@@ -455,9 +723,7 @@ The literature analysis concludes by emphasizing the role that digital communica
 
 
 
-**2.7 RESEARCH GAPS.**
 
-Many research gaps exist in the application of digital communication systems, especially for rural agricultural communities like KALRO farmers, as the literature study makes clear. There is little research on the use of ticketing systems in agriculture, particularly in low-resource settings with limited access to digital literacy and technological infrastructure, despite the fact that they have been extensively studied and used in customer service and other industries. Furthermore, the majority of current solutions fall short in addressing the particular requirements of rural farmers, namely support in their native tongues and access through simple mobile phones. In order to guarantee effective and timely service delivery, there is also a dearth of attention paid to the integration of government agriculture services with these systems. By creating a ticketing system specifically suited to the requirements of KALRO farmers, this research aims to close these gaps. It emphasises accessibility via smartphone integration, user-friendly design, and language support. Furthermore, in order to guarantee a seamless exchange of information and services, the project will investigate methods for integrating the system with currently in use government platforms. The goal of this project is to close these gaps and provide a workable, scalable solution that improves farmer-government relations in the provision of agricultural services.
 
 
 
@@ -467,28 +733,47 @@ Many research gaps exist in the application of digital communication systems, es
 
 References
 
-Eremina, I., Yudin, A., Tarabukina, T., & Oblizov, A. (2022). The Use of Digital Technologies to Improve the Information Support of Agricultural Enterprises. International Journal of Technology, 13(7), 1393-1402.
-Ntaliani, M., Costopoulou, C., & Karetsos, S. (2008). Mobile government: A challenge for agriculture. Government Information Quarterly, 25(4), 699-716.
-Hillstrom, K., & Hillstrom, L. C. (Eds.). (2007). The Industrial Revolution in America: Communications, Agriculture and Meatpacking, Overview/Comparison [3 volumes]. 
-Bloomsbury Publishing USA. 
-Kumar Jaiswal, P. (2011). SMS Based Information Systems. University of Eastern Finland School of Computing.
-Ault, A. C., Krogmeier, J. V., & Buckmaster, D. (2013). Mobile, cloud-based farm management: a case study with trello on my farm. In 2013 Kansas City, Missouri, July 21-July 24, 2013 (p. 1). American Society of Agricultural and Biological Engineers.
-Mao, X., Huang, Q., Pan, J., Yan, Z., & Liu, W. (2021). Research on New Ticket System Architecture Based on Middle Platform. In Advances in Smart Vehicular Technology, Transportation, Communication and Applications: Proceeding of the Third International Conference on VTCA, 15–18 October 2019, Arad, Romania (pp. 237-248). Springer Singapore.
-Christou, E., Avdimiotis, S., Kassianidis, P., & Sigala, M. (2004, January). Examining the factors influencing the adoption of web-based ticketing: Etix and its adopters. 
-In ENTER (pp. 129-138).
-Singh, P., Kansal, M., Tyagi, G., Tanwar, K., Singh, A. P., & Yadav, R. K. (2024). Empowering Farmers: An AI-Based Solution for Agricultural Challenges. In Computational Intelligence in Internet of Agricultural Things (Pp. 401-417). Cham: Springer Nature Switzerland.
-Fachri, B. (2023). Ticket reporting information system using a web based waterfall method. Prosiding universitas dharmawangsa, 3(1), 282-290.
-Burbi, S., & Hartless Rose, K. (2016). The role of internet and social media in the diffusion of knowledge and innovation among farmers.
+Chappell, D. (2009). Enterprise Service Bus. O’Reilly Media.
+
+Dragoni, N., Giallorenzo, S., Lafuente, A. L., Mazzara, M., Montesi, F., Mustafin, R., & Safina, L. (2017). Microservices: Yesterday, today, and tomorrow. Present and Ulterior Software Engineering, 195–216.
+
+Erl, T. (2005). Service-Oriented Architecture: Concepts, Technology, and Design. Prentice Hall.
+
+Fowler, M., & Lewis, J. (2014). Microservices. ThoughtWorks.
+
+Newman, S. (2015). Building Microservices: Designing Fine-Grained Systems. O’Reilly Media.
+
+Parnas, D. L. (1972). On the criteria to be used in decomposing systems into modules. Communications of the ACM, 15(12), 1053–1058.
+
+Tanenbaum, A. S., & Van Steen, M. (2017). Distributed Systems: Principles and Paradigms. Pearson.
+.
 
 
 
 
-**CHAPTER 3: SYSTEM ANALYSIS AND DESIGN**
-**3.1 Introduction**
-This chapter provides a comprehensive analysis and design overview of the proposed USSD-based agricultural platform developed for the Kenya Agricultural and Livestock Research Organization (KALRO). The system was designed to provide rural and peri-urban farmers with seamless access to agricultural services and digital payment capabilities through a simple, accessible USSD interface. It specifically aims to support services such as product registration, produce selling and buying, seed and fertilizer offers, and transport requests—integrated with Safaricom’s Daraja API for STK Push mobile payments.
-To ensure that the system meets user expectations and technical standards, this chapter outlines the methodologies used in its development, starting from requirement gathering to logical system design. A user-centered and iterative approach was adopted to ensure both functionality and usability.
 
-**3.2 Systems Development Methodology**
+
+
+
+
+
+
+
+CHAPTER 3: SYSTEM ANALYSIS AND DESIGN
+
+3.1 INTRODUCTION
+
+This chapter transitions from the theoretical discussion of the communication gap in microservices to the practical analysis and design of a tangible solution. Using the Kenya Agricultural and Livestock Research Organization (KALRO) farmer communication platform as a case study, this section outlines the architectural blueprint of the proposed system. The primary objective is to detail the methodologies and design principles employed to create a robust, scalable, and decoupled system that effectively bridges the communication challenges inherent in distributed architectures.
+The core of the proposed solution is a microservices architecture where independent services communicate asynchronously. To address the central problem of inter-service communication, an event-driven, publish/subscribe model was selected. This approach, orchestrated by a central message broker, ensures that services remain loosely coupled, improving resilience and maintainability.
+This chapter will systematically break down the system's design. It will begin by defining the functional and non-functional requirements derived from the case study's needs. Subsequently, it will present the high-level system architecture, detailing each microservice's role and responsibilities. The discussion will cover the design of the:
+•	USSD/SMS Communication Service
+•	Payment Verification Service
+•	Data Management Service
+•	Notification Service
+Finally, the chapter will detail the data models, integration workflows, and the specific technologies chosen to implement this architecture. The following sections will provide a comprehensive overview of the system's design, beginning with the analysis of its core requirements.
+
+ 3.2 SYSTEMS DEVELOPMENT METHODOLOGY
+ 
 In the development of the KALRO USSD application, an Agile Software Development Methodology was adopted. This methodology emphasizes iterative development, close stakeholder collaboration, and continuous feedback—key factors when building systems meant to be both user-centric and responsive to changing agricultural service needs.
 Agile was chosen due to its suitability for projects where requirements are expected to evolve. Since the KALRO USSD app serves a wide demographic with varying literacy and technology exposure, iterative prototyping and constant user feedback loops were crucial in ensuring the final product was simple, functional, and effective.
 The Agile process followed these phases:
@@ -499,9 +784,12 @@ The Agile process followed these phases:
 5.	Deployment and Feedback: The application was deployed in a testing environment for user trials. Feedback led to improvements in menu clarity, database schema adjustments, and the addition of features like transport requests.
 The flexibility of Agile allowed the system to remain adaptable and responsive, especially when KALRO requested enhancements to menu flows or changes in pricing structures for different produce items. It also ensured that stakeholder input was incorporated continuously throughout development, increasing the likelihood of adoption and usability among rural farmers.
 
-**3.3 Feasibility Study**
+3.3 FEASIBILITY STUDY
+
 The feasibility study was conducted to assess whether the development and deployment of the KALRO USSD-based platform was viable and sustainable. This involved examining the project from several dimensions: technical, operational, economic, and legal. The goal was to ensure that the system could be developed with the available resources and would deliver value to farmers, KALRO officers, and other agricultural stakeholders.
+
 3.3.1 Technical Feasibility
+
 The proposed system is technically feasible. The application leverages proven technologies including:
 •	USSD Gateway integration to facilitate interactions over feature phones.
 •	Flask, a lightweight and efficient Python web framework, for building the backend logic.
@@ -509,42 +797,56 @@ The proposed system is technically feasible. The application leverages proven te
 •	Daraja API for initiating and handling mobile money payments via STK Push.
 •	Hosting on cloud platforms or local servers using minimal infrastructure.
 All these tools are open-source or available via freemium plans, making them cost-effective and suitable for scalable deployment across various regions in Kenya.
+
 3.3.2 Operational Feasibility
+
 The system is operationally feasible for both farmers and KALRO staff:
 •	The USSD interface ensures accessibility to users with basic mobile phones and without internet access.
 •	The menu-driven design is simple, with short and clear steps.
 •	Payment confirmations via STK Push (Daraja) are familiar to most Kenyan mobile users, improving ease of use.
 •	KALRO agents can access purchase and transport data through a simple admin dashboard, aiding in logistics coordination and recordkeeping.
 Training needs are minimal due to the straightforward interface and language used in prompts.
+
 3.3.3 Economic Feasibility
+
 From a financial standpoint, the system is economically viable:
 •	Development costs were kept low by using open-source technologies (Flask, MongoDB).
 •	The USSD service can be provisioned using shortcodes through partnerships with mobile operators or aggregators.
 •	Ongoing costs are minimal and include server hosting, USSD gateway fees, and optional cloud database services.
 The expected economic benefits—improved market access for farmers, reduced losses from unsold produce, and more efficient agricultural input distribution—outweigh the development and operational expenses.
+
 3.3.4 Legal Feasibility
+
 The system complies with the relevant legal and regulatory frameworks in Kenya:
 •	Data privacy: User information, including phone numbers and transaction data, is securely stored and not shared with third parties without consent.
 •	Payment regulations: The Daraja API integration aligns with Safaricom’s standards and is legally compliant with Central Bank of Kenya (CBK) mobile transaction policies.
 •	USSD licensing: Collaboration with licensed mobile service providers ensures the system’s USSD access is lawfully provisioned.
 With proper data management and adherence to Kenya’s Data Protection Act (2019), the application meets all key legal requirements.
 
-**3.4 Requirements Elicitation**
+3.4 REQUIREMENTS ELICITATION
+
 Requirements elicitation is a critical phase in the system development process that involves gathering, analyzing, and validating the needs of stakeholders to guide system design and implementation. For the KALRO USSD application, a combination of qualitative techniques was employed to obtain accurate, comprehensive, and user-centered system requirements.
+
 3.4.1 Stakeholder Identification
+
 The primary stakeholders involved in the system include:
 •	Smallholder farmers: The end users who interact with the USSD system to buy/sell farm produce, access seed and fertilizer offers, and request transportation services.
 •	KALRO officers: Agricultural officers responsible for monitoring transactions, managing logistics, and analyzing usage data from the admin dashboard.
 •	Agricultural input suppliers: Entities offering seeds, fertilizers, and other inputs to farmers.
 •	Mobile network service providers: Facilitators of USSD and mobile money infrastructure (e.g., Safaricom via the Daraja API).
+
 3.4.2 Techniques Used
+
 To ensure the requirements reflect the actual needs of users and the operating environment, the following elicitation techniques were used:
 •	Interviews: Informal discussions were conducted with KALRO staff and selected farmers to understand daily challenges, how they interact with agricultural systems, and their preferred workflows.
 •	Observation: Field visits helped understand the digital literacy level of target users and confirmed that many use basic phones without internet connectivity, reinforcing the need for a USSD interface.
 •	Document Review: Analysis of KALRO reports and existing agricultural service workflows provided insights into logistical issues such as delayed input delivery, unpredictable market prices, and poor record-keeping.
 •	Brainstorming and Feedback Loops: Development was carried out iteratively, with each feature (e.g., transport request or produce sales) being reviewed and refined based on stakeholder feedback.
+
 3.4.3 Key Requirements Identified
+
 From the elicitation process, the following functional and non-functional requirements were established:
+
 Functional Requirements:
 •	Users should be able to register using their phone number, location, and PIN.
 •	The USSD system must allow users to:
@@ -554,24 +856,30 @@ o	Access current offers on seeds and fertilizers.
 o	Request transportation for farm goods.
 •	Payment should be confirmed via Safaricom STK Push using Daraja API.
 •	Admins should have access to purchase and transport data, filtered by location.
+
 Non-Functional Requirements:
 •	The system must support session persistence across multiple steps.
 •	Menus must be short, intuitive, and easily navigable using a feature phone keypad.
 •	Responses must be fast (typically under 5 seconds) to prevent USSD timeouts.
 •	Data must be securely stored and protected in compliance with data protection laws.
 •	The system must be scalable to accommodate additional produce categories and features in future updates.
+
 These requirements guided the modeling and design phases and ensured the resulting system aligns with real-world usage and constraints.
 
-**3.5 Data Analysis**
+3.5 DATA ANALYSIS
 Data analysis plays a critical role in transforming raw user inputs, requirements, and stakeholder feedback into a structured framework for system development. For the KALRO USSD-based platform, data analysis focused on identifying patterns, refining workflows, and segmenting core functionalities that would support effective service delivery to farmers.
 The analysis was performed on the data collected during the requirements elicitation phase, field observations, and prototype feedback from test users. The aim was to ensure the system structure directly addresses real user needs while maintaining technical feasibility.
+
 3.5.1 User Behavior Patterns
+
 The analysis revealed the following behavioral insights that significantly influenced the system design:
 •	Most farmers use feature phones, making USSD the most practical communication interface.
 •	Users prefer direct navigation paths: Farmers favored short, menu-driven options with minimal steps, e.g., selecting produce by number rather than typing full names.
 •	Pricing sensitivity: Many users compare prices before committing to a purchase or sale, prompting the inclusion of price previews and confirmation steps.
 •	Reliance on mobile payments: Most users already use M-PESA, which validated the integration of STK Push via the Daraja API for secure and familiar payments.
+
 3.5.2 Functional Grouping
+
 From the data, system functionalities were grouped into the following modules:
 •	User Management: Registration, login with PIN, and user session tracking.
 •	Product Marketplace:
@@ -580,7 +888,9 @@ o	Sell Produce: Select produce, enter quantity for sale, and confirm submission.
 •	Inputs Offers: View available fertilizer offers by category.
 •	Transport Requests: Request transportation services for sold produce, with linked location data.
 •	Admin Dashboard Access: View filtered transactional data based on the admin’s assigned location and status.
+
 3.5.3 Data Entities and Attributes
+
 Key data elements were identified for database modeling. These include:
 Entity	Attributes
 User	Phone number, Name, PIN, Location ID, Date of Registration
@@ -589,16 +899,22 @@ Purchase	User ID, Produce Name, Quantity, Total Price, Payment Status, Timestamp
 Sale	User ID, Produce Type, Quantity, Selling Price, Status, Timestamp
 Transport Request	User ID, Purchase/Sale ID, Pickup Location, Status, Request Time
 Admin	Name, Email, Password, Assigned Location ID
+Table 3 Data Entities and Attributes
 These entities were further used to define MongoDB collections such as users, purchased, sales, and admins.
+
 3.5.4 Workflow Insights
+
 •	Sequential menu navigation was preferred over branching to reduce confusion.
 •	Users often abandon sessions if required to enter long text, favoring numeric options.
 •	Confirmation prompts reduced transaction errors and improved user trust.
 The insights gained during data analysis provided the basis for modeling the system’s flow, database structure, and interface logic, all tailored for efficiency and usability.
 
-**3.6 System Specification**
+3.6 SYSTEM SPECIFICATION
+
 The system specification defines both the functional and non-functional requirements of the KALRO USSD-based agricultural platform. These specifications provide a clear blueprint for what the system must accomplish and how it should behave under various conditions. They serve as the foundation for system modeling, design, and implementation.
+
 3.6.1 Functional Requirements
+
 These are the specific operations and tasks the system must perform to meet user and stakeholder needs:
 1.	User Registration
 o	New users must register with their phone number, full name, location, and create a 4-digit PIN.
@@ -631,7 +947,9 @@ o	Only completed purchases with included or completed transport status are displ
 8.	Daraja Callback Handling
 o	The system receives payment callbacks and updates payment_status to completed or failed.
 o	Upon success, the user receives a confirmation USSD message and the transaction is finalized.
+
 3.6.2 Non-Functional Requirements
+
 These define the quality attributes the system must uphold for performance, security, and reliability.
 Requirement	Description
 Performance	All USSD responses must be returned within 5 seconds to prevent timeout.
@@ -642,17 +960,18 @@ Data Integrity	Transactions must be atomic, especially around payment and confir
 Usability	Menus must be clear, short, and intuitive to users with low digital literacy.
 Compliance	The system must adhere to Kenya’s Data Protection Act and M-PESA transaction laws.
 Localization	he system should support multilingual options in future updates.
-
+Table 4 Non-Functional Requirements
 The above specifications ensure that the KALRO USSD system meets the intended goals of accessibility, reliability, and ease of use for farmers, while remaining manageable and insightful for KALRO administrators.
 
+3.7 REQUIREMENTS ANALYSIS AND MODELING
 
-
-
-**3.7 Requirements Analysis and Modeling**
 After gathering and specifying the system requirements, the next step involves analyzing them to identify relationships, dependencies, and potential conflicts, and structuring them into a coherent design. This ensures that the final system aligns with stakeholder needs and behaves predictably in real-world usage.
 This section outlines the analysis process, highlights how the requirements were structured into components, and presents key modeling diagrams used to visualize system behavior and interactions.
+
 3.7.1 Requirements Dependency and Conflict Analysis
+
 The requirements were carefully reviewed to identify logical dependencies and possible conflicts:
+
 •	Dependencies:
 o	STK Push payments depend on successful user authentication and product selection.
 o	Transport requests depend on the existence of a completed purchase with a transport_checkout_status of "declined".
@@ -662,7 +981,9 @@ o	Conflict: Payment confirmation and session timeout can cause data loss.
 	Solution: Implement asynchronous Daraja callback handling to update payment status independently of session flow.
 o	Conflict: Multiple transactions by a user in rapid succession may cause confusion in transport requests.
 	Solution: Allow selection from a list of previously completed purchases where transport was declined.
+
 3.7.2 Functional Structuring of Requirements
+
 Requirements were grouped into modular functionalities, each handled by specific components:
 Module	Functionality
 Produce Marketplace	Buying and Selling of Farm Produce
@@ -671,15 +992,19 @@ Input Offers	Viewing seed and fertilizer offers
 Transport Request	Updating transport status for prior declined purchases
 Admin Dashboard	Viewing filtered records of purchases and transport statuses by location
 User Management	Registration, Login, Session Tracking
-
+Table 5 Modules
 Each module is implemented as a Flask route (or endpoint) and interacts with MongoDB collections like users and purchased.
+
 3.7.3 Modeling Diagrams
+
 To further clarify and visualize system behavior, several modeling diagrams were used:
 A. Use Case Diagram
- 
+ <img width="1950" height="1950" alt="image" src="https://github.com/user-attachments/assets/a382a48c-fecf-4bc7-ac81-10a2778dedff" />
+
+Figure 4 Use Case
 
 
-<img width="675" height="654" alt="image" src="https://github.com/user-attachments/assets/e78cbade-d687-4aba-a3d4-0d5471727717" />
+
 
 
 
@@ -693,20 +1018,37 @@ A. Use Case Diagram
 
 B. Data Flow Diagram (DFD) 
 
- <img width="923" height="1209" alt="image" src="https://github.com/user-attachments/assets/789a67e1-fdf8-467c-9b8d-a42ecb790418" />
+ <img width="1950" height="1950" alt="image" src="https://github.com/user-attachments/assets/98cf9cf3-941b-424a-aeff-715d634ffea7" />
+Figure 5 Data Flow Diagram
+
+
+
 
 
 C. Conceptual Class Diagram 
-<img width="975" height="933" alt="image" src="https://github.com/user-attachments/assets/af86bcbc-8123-4d06-b1d7-a2a85120e4e1" />
 
- 
-These diagrams and the modular structure ensured that the development team could clearly understand the expected system functionality and interactions. They also served as documentation references during testing, debugging, and stakeholder reviews.
+ <img width="1950" height="1866" alt="image" src="https://github.com/user-attachments/assets/b734b5ff-4c2e-48bf-b5f3-6427dbb4002e" />
+
+Figure 6 Class Diagram
+	These diagrams and the modular structure ensured that the development team could clearly understand the expected system functionality and interactions. They also served as documentation references during testing, debugging, and stakeholder reviews.
 
 
-**3.8 Logical Design**
+3.8 LOGICAL DESIGN
+
 This section outlines the logical design of the KALRO USSD Application. It captures the core structure, behavior, and functionality of the system using high-level architectural and flow models. The logical design serves as a blueprint for the implementation phase.
+
 3.8.1 System Architecture
+
 The KALRO USSD Application adopts a client-server architecture, where the mobile user acts as the client, and the back-end system (server) processes requests and returns appropriate responses.
+The client is the farmer's feature phone. It is the device that initiates a request, either by dialing a USSD code or sending an SMS. The client's role is to send data to the server and display the response it receives. It acts as the entry point for all farmer interactions.
+The Server
+The server is the entire microservices architecture that resides in the backend. It's not a single machine but a distributed system of interconnected services. The server's role is to receive the client's request, process it, and generate an appropriate response. This is where all the business logic, payment handling, data storage, and notification management takes place.
+The Interaction Flow
+The client-server interaction is a simple request-response cycle:
+1.	Request: A farmer sends a request from their phone (the client).
+2.	Processing: The request is received by the USSD/SMS Communication Service (part of the server), which then triggers the event-driven workflow you designed.
+3.	Response: The Notification Service (also part of the server) sends the final output back to the farmer's phone (the client) as an SMS or USSD session response.
+
 Major Components:
 •	USSD Client Interface
 Interacts with users through shortcodes via mobile phones.
@@ -725,12 +1067,22 @@ o	Research queries
 Integrates mobile money for payment handling.
 
 
-Client-Server
-<img width="558" height="506" alt="image" src="https://github.com/user-attachments/assets/b4a2deae-65db-4b06-a043-c38acd1a8acb" />
 
+
+
+
+
+
+Client-Server
+
+<img width="1950" height="1950" alt="image" src="https://github.com/user-attachments/assets/23059349-5fa6-463b-81a1-c58e38586c54" />
  
+Figure 7 Client-Server
+
 3.8.2 Control Flow and Process Design
+
 Control flow refers to how users navigate the system and how the server handles those interactions. Each menu option triggers a route which processes the request, performs validations, interacts with the database, and returns a USSD response.
+
 Key Process Flows:
 1.	User Registration/Login
 o	User inputs details via USSD.
@@ -746,10 +1098,30 @@ o	Price is calculated and saved in sales collection.
 o	System fetches declined purchases.
 o	User selects one and confirms STK Push for transport.
 o	On success, system updates transport_checkout_status to "included".
-Sequence Diagram (Textual):
-<img width="678" height="1017" alt="image" src="https://github.com/user-attachments/assets/8b26cf52-66c3-4454-97a0-5d63dbab672e" />
 
- 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Sequence Diagram (Textual):
+
+ <img width="1356" height="2034" alt="image" src="https://github.com/user-attachments/assets/32e0ddfa-dd19-4764-8ffd-ee6fc4d1762b" />
+
+Figure 8 Sequence Diagram
+
+
+
 Activity Flow
 Example – Fertilizer Purchase with Transport:
 1.	User selects "Fertilizer Offers"
@@ -760,8 +1132,9 @@ Example – Fertilizer Purchase with Transport:
 6.	Show total + confirmation
 7.	If confirmed → Trigger STK Push
 8.	Record transaction
- <img width="716" height="1350" alt="image" src="https://github.com/user-attachments/assets/23bc4c62-10f6-4852-9c45-861ce38a87b1" />
+ <img width="1372" height="2588" alt="image" src="https://github.com/user-attachments/assets/f0dba2df-689f-4091-9ea2-b4ce841c2c51" />
 
+Figure 9 Activity Diagram
 Pseudo-code 
 
 if purchase['transport_checkout_status'] == 'declined':
@@ -772,6 +1145,7 @@ if purchase['transport_checkout_status'] == 'declined':
 
 
 3.8.3 Design for Non-Functional Requirements
+
 Security Strategies:
 •	Input validation on all entries (e.g., numeric enforcement for ID, menu options)
 •	STK Push via MPesa ensures secure payment flow without exposing user credentials.
@@ -786,9 +1160,12 @@ Efficiency, Effectiveness & Appeal:
 •	Transport cost calculation automated to enhance decision-making.
 •	Session memory logic helps return users where they left off if interrupted.
 
-**3.9 Physical Design**
+3.9 PHYSICAL DESIGN
+
 This section presents the physical design of the KALRO USSD application. It includes decisions and specifications regarding the actual technologies and platforms used, with emphasis on the database, user interfaces, and system integration components.
+
 3.9.1 Database Design
+
 Database Management System (DBMS):
 •	MongoDB (NoSQL) – chosen for its flexibility, scalability, and ability to store semi-structured data.
 Database Schema (Collections & Fields):
@@ -797,7 +1174,7 @@ users	_id, name, location, category, phone_number, registered_at
 purchased	_id, user_id, item_name, item_type, price, quantity, transport_checkout_status, total_price, payment_status, purchased_at
 sales	_id, user_id, produce_type, quantity, price_per_unit, status, date
 admins	_id, username, password
-
+Table 6 Database Schema
 Design Features:
 •	Data Integrity: Validations for phone numbers and numeric entries.
 •	Security:
@@ -809,7 +1186,9 @@ o	Indexes on user_id, purchased_at, and date to improve filtering and reporting.
 o	Light-weight documents for low latency and fast query response in USSD environment.
 •	Storage Format:
 o	All data stored in JSON-like BSON format native to MongoDB.
+
 3.9.2 User Interface Design
+
 Though the system operates via a USSD interface (text-based), design considerations were applied to ensure usability, clarity, and logical flow across interactions.
 Application Programming Interfaces:
 •	USSD Gateway ↔ Application Server
@@ -831,7 +1210,7 @@ STK Push triggered or "Transaction Cancelled."
 
 Sell Farm Produce	Produce type, quantity, price per unit	"Your produce has been listed for sale."
 Login	Pin	"Welcome, [User]!" or error message if not found
-
+Table 7 Input and Output forms
 
 Wireframe (USSD Flow Sketch):
 Due to the nature of USSD, wireframes are linear. Below is a text-based wireframe example for Fertilizer Offers flow:
@@ -866,22 +1245,30 @@ Pay Now?
 1. Yes
 2. Cancel
 
-                 
+     <img width="1131" height="1697" alt="image" src="https://github.com/user-attachments/assets/5d49bfae-2df4-457d-b0ff-40094b4e73e8" />
+            
+Figure 10 Wireframe
 
 
-<img width="566" height="848" alt="image" src="https://github.com/user-attachments/assets/6cd421fc-3d50-40e4-a2c0-0cac445a2012" />
 
 
 
-**CHAPTER 4: SYSTEM IMPLEMENTATION AND TESTING,
-CONCLUSIONS AND RECOMMENDATIONS**
 
-**4.1 Introduction**
+
+CHAPTER 4: SYSTEM IMPLEMENTATION AND TESTING,
+CONCLUSIONS AND RECOMMENDATIONS
+
+4.1 INTRODUCTION
+
 This chapter describes the implementation environment, tools used, and testing processes for the KALRO USSD application. It also presents conclusions and recommendations drawn from the system development lifecycle.
 The goal of the system is to provide an accessible mobile-based platform for farmers, agro-dealers, and researchers to interact with KALRO services via USSD, even in low-bandwidth regions. A layered architecture was adopted, encompassing the backend logic, middleware (USSD gateway), and a cloud-hosted NoSQL database.
-**4.2 Environment and Tools**
+
+4.2 ENVIRONMENT AND TOOLS
+
 The system was developed in a modular, multi-layered environment comprising the backend server, USSD gateway middleware, and a cloud-hosted database. The tools and technologies were selected based on reliability, ease of integration, and scalability.
+
 4.2.1 Backend (Server-Side Logic)
+
 The backend was developed using Python with the Flask framework. It handles session management, menu navigation, transaction processing, and communication with the database and payment system.
 •	Programming Language: Python 3
 •	Framework: Flask (lightweight and suitable for RESTful APIs)
@@ -891,13 +1278,16 @@ o	requests – for API communication with M-Pesa
 o	python-dotenv – for environment variable management
 
 4.2.2 Middleware (USSD Gateway Integration)
+
 The USSD layer is integrated using Africa’s Talking, a platform that provides programmable USSD shortcodes and handles session routing.
 •	Integration Platform: Africa’s Talking (AT)
 •	Implementation Details:
 o	USSD requests are received via AT
 o	AT forwards user inputs to the Flask backend through POST requests
 o	The backend responds with the next menu or action
+
 4.2.3 Database
+
 The application uses MongoDB as its primary data storage system due to its flexibility and support for dynamic schema designs. Data is stored in collections rather than relational tables.
 •	Database Type: NoSQL
 •	Database Engine: MongoDB (hosted on MongoDB Atlas)
@@ -910,16 +1300,22 @@ o	admins – stores admin login credentials
 o	Encrypted connections via TLS
 o	Admin credentials hashed before storage
 o	IP-based access control (whitelisting enabled)
+
 4.2.4 Deployment Environment
+
 Development and testing were performed locally using Ngrok to expose the backend server to the internet. This allowed seamless integration with Africa's Talking USSD gateway during the development phase.
 •	Development OS: Windows 10
 •	Editor: Visual Studio Code (VS Code)
 •	Local Hosting Tool: Ngrok – used to tunnel the Flask server over a public URL
 •	Testing Devices: Safaricom-enabled GSM phones for USSD and MPesa STK Push verification
-**4.3 System Code Generation**
+
+4.3 SYSTEM CODE GENERATION
+
 The code generation process for the KALRO USSD application involved translating the system’s logical design into working modules that handle user registration, menu navigation, fertilizer purchases, produce sales, and MPesa payment integration. The backend was built using Python with the Flask framework, while Ngrok was used to expose the localhost endpoint to Africa's Talking for testing.
 The code is structured around endpoints that respond to incoming POST requests from Africa’s Talking’s USSD gateway. Each session progresses by checking the user's input (text) and returning the appropriate menu or action.
+
 4.3.1 Key Process: USSD Entry Point
+
 This route handles incoming requests from Africa’s Talking and determines the next screen to show based on user input.
 @daraja_callback_bp.route("/daraja/callback", methods=["POST"])
 def daraja_callback():
@@ -953,6 +1349,7 @@ def daraja_callback():
         print("Error processing callback:", str(e))
 
 4.3.2 Key Process: Registration
+
 When a new user accesses the system, they’re guided through a step-by-step registration process.
 elif not is_registered:
         if user_responses[0] == "1":  # Register flow
@@ -987,6 +1384,7 @@ elif not is_registered:
 
 
 4.3.3 Key Process: Fertilizer Purchase with Transport Option
+
 This section allows users to view fertilizer options, select one, and choose whether they want transport
  if option == "1":
                 # Level 3 -> display main offers menu
@@ -1047,6 +1445,7 @@ This section allows users to view fertilizer options, select one, and choose whe
                         response = "END Invalid selection."
 
 4.3.4 Key Process: MPesa STK Push Integration
+
 If the user agrees to pay, the system initiates an STK Push via MPesa.
 def lipa_na_mpesa_online(phone_number, amount, account_reference, transaction_desc,callback):
     access_token = get_access_token()
@@ -1084,6 +1483,7 @@ def lipa_na_mpesa_online(phone_number, amount, account_reference, transaction_de
     print("MPESA STK Push Response:", data)
 
 4.3.5 Key Process: Produce Sale Listing
+
 Users can list their farm produce for sale with quantity and price.
         elif option == "3":
                 if level == 3:
@@ -1142,9 +1542,12 @@ Users can list their farm produce for sale with quantity and price.
                     else:
                         response = "END Sale cancelled.
 
-**4.4 Testing**
+4.4 TESTING
+
 Testing was a crucial phase in the development of the KALRO USSD application, ensuring that all system functions met the expected requirements. A structured testing strategy was adopted, involving both functional and non-functional tests.
+
 4.4.1 Testing Strategy
+
 The system was subjected to the following testing strategy.
 1. Unit Testing
 •	Tested individual functions in the backend such as:
@@ -1166,6 +1569,7 @@ o	Backend and MPesa STK Push API
 o	Invalid menu selections
 o	Missing input values
 o	Session timeouts and retry behavior
+
 4.4.2 Testing Suite and Tools
 
 Test Type	Tool/Platform	Description
@@ -1181,8 +1585,23 @@ Tunnel Testing
 
 	Ngrok	Exposed localhost to public USSD gateway
 Payment Testing	Safaricom Daraja Sandbox	Triggered STK Push flows to verify payment interaction
+Table 8 Test Suite and Tools
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 4.4.3 Sample Test Cases and Results
+
 Test Case	
 	Expected Result
 	Actual Result	Pass/Fail
@@ -1193,14 +1612,24 @@ Fertilizer selected + transport = total	Total price includes Ksh 350 transport	A
 STK Push on "Pay Now"	Phone receives payment prompt	Prompt received	Pass
 Selling produce with quantity and price	Produce listed in sales collection	Recorded	Pass
 Transport skipped	Total shown without transport fee	Correct total	Pass
-
+Table 9 Test Results
 
 4.4.4 Screenshots of Tests 
+    <img width="579" height="1018" alt="image" src="https://github.com/user-attachments/assets/cb460ae2-2d00-45a4-ab49-edae0f13757a" />
+    <img width="605" height="1029" alt="image" src="https://github.com/user-attachments/assets/ff02a80b-1fa7-4c37-b49d-e50bc17ba456" />
+    <img width="608" height="1034" alt="image" src="https://github.com/user-attachments/assets/867fe927-2600-401c-a08c-59f544f62b67" />
+    <img width="633" height="1054" alt="image" src="https://github.com/user-attachments/assets/9af95b71-e868-4623-b8b5-3befedbdcc75" />
+    <img width="619" height="1030" alt="image" src="https://github.com/user-attachments/assets/55aab177-d771-47ee-814a-964f977ce4db" />
+    <img width="523" height="930" alt="image" src="https://github.com/user-attachments/assets/bb78d177-4acd-4d97-90eb-4d3c34ade84c" />
 
-**4.5 User Guide**
+Figure 11 Screenshots
+   
+
+4.5 USER GUIDE
 This section provides step-by-step instructions on how users interact with the KALRO USSD system. It covers registration, login, buying and selling produce, accessing offers, and making transport requests.
+
 1. Accessing the System
-•	Dial the USSD code (e.g., *123#) on any mobile phone.
+•	Dial the USSD code *384*79300# on any mobile phone.
 •	The system checks if the user is registered.
 2. Registration (First-Time Users)
 •	Unregistered users are prompted to enter:
@@ -1251,7 +1680,8 @@ o	The purchase record is updated.
 o	transport_checkout_status is changed to "included".
 o	A confirmation is displayed to the user.
 
-**4.6 Conclusions**
+4.6 CONCLUSIONS
+
 The development and implementation of the KALRO USSD-based agricultural platform successfully addressed the core needs identified by the client—primarily providing a simple, accessible, and reliable tool for farmers to engage with agricultural markets using basic mobile phones.
 Problem Solved
 The client’s challenge was to offer farmers—particularly those in rural areas without smartphones or internet—an effective platform to:
@@ -1279,10 +1709,12 @@ Challenges Faced
 •	Limited Access to Devices for Field Testing: The team could not conduct large-scale live tests on actual feature phones, relying instead on sandbox environments.
 Despite these challenges, the system achieved its primary goals and laid a foundation for future scalability, localization, and integration with more agricultural services.
 
-**4.7 Recommendations**
-Based on the conclusions drawn from the implementation of the KALRO USSD agricultural system, several improvements are recommended to enhance system performance, user experience, and scalability. First, the system should support multiple local languages such as Kiswahili to ensure that farmers from various regions can comfortably use the platform. Integrating SMS notifications for successful transactions and transport confirmations would also improve transparency and user confidence. The transport request feature could be expanded to include delivery timelines, driver information, or tracking capabilities to improve accountability. Additionally, the admin dashboard should be enhanced with features like report exporting, role-based access, and real-time notifications. Security and performance can be improved by implementing rate limiting, session logging, and USSD shortcode whitelisting. It is also recommended that the system be migrated to a dedicated, production-grade USSD gateway to ensure scalability and carrier compatibility. Further, automated handling and monitoring of STK Push failures should be implemented to maintain transactional reliability. Finally, piloting the system with real farmers and KALRO officers in a selected region before full-scale rollout will help refine the application based on real-world feedback.
+4.7 RECOMMENDATIONS
 
-
-
-
+Improvements for the Microservices Architecture:
+Decoupled Language Support: Instead of modifying the existing USSD/SMS Communication Service to handle multilingual text, a new, dedicated Translation Microservice should be implemented. This service would subscribe to incoming events, translate relevant text, and publish a new event with the localized content. This keeps the core communication service lean and allows the system to easily add more languages in the future without redeploying other services.
+Specialized Transport Service: To expand the transport features (timelines, driver information, tracking), a new, dedicated Transport Management Service should be created. This service would be responsible for all logistics. It would subscribe to "order_fulfilled" events, manage the transport details, and then publish "transport_assigned" or "delivery_scheduled" events. The Notification Service would then subscribe to these new events to send the appropriate updates to the farmer, maintaining the principle of single responsibility.
+Dedicated Analytics and Security Microservices: The enhanced admin dashboard features should be powered by new, independent services. An Analytics and Reporting Service would subscribe to all relevant events from the Message Broker and process them to provide data for the dashboard. This offloads resource-intensive reporting queries from the primary Data Management Service. Similarly, features like rate limiting and security logging should be managed by a dedicated API Gateway and a Logging Service, which can protect the core services and provide centralized security monitoring without adding complexity to the business logic of each service.
+Transaction Reliability: The automated handling and monitoring of STK Push failures should be handled internally by the Payment Verification Service. This service would be enhanced to listen for failure events from the Daraja API. When a failure is detected, the service would publish a specific "payment_failure" event to the Message Broker. The Notification Service would then subscribe to this event and send an appropriate message to the farmer, ensuring transactional reliability is managed within the responsible service.
+Infrastructure for Scalability: The recommendation to migrate to a production-grade USSD gateway is an architectural improvement focused on the USSD/SMS Communication Service. The core logic of the microservice would remain the same, but the integration layer would be upgraded to ensure it can handle increased traffic and maintain compatibility across different carriers, which is crucial for scalability in a microservices environment.
 
