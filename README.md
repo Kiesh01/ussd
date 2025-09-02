@@ -371,6 +371,7 @@ By applying these microservices design patterns, the proposed solution aims to e
 1.5 OBJECTIVES.
 
 General Objective.
+
 1.	To design and implement a reliable, scalable, and fault-tolerant microservices architecture that addresses communication inefficiencies in distributed systems, using the Kenya Agricultural and Livestock Research Organisation (KALRO) as a case study.
 
 Specific Objectives.
@@ -459,15 +460,25 @@ Figure 2 Agile Planning
 
 This project is limited to the design, implementation, and evaluation of a microservices architecture aimed at addressing communication and coordination challenges in distributed systems, with the Kenya Agricultural and Livestock Research Organisation (KALRO) serving as the case study. The primary focus is on solving technical issues common in microservices—such as service discovery, message delivery reliability, fault tolerance, and scalability—rather than on general system digitization or organizational restructuring.
 The system to be developed will consist of independent, loosely coupled services for request handling, enquiry tracking, notification delivery, authentication, and analytics. It will be accessible via mobile platforms, with provisions for low-connectivity areas through USSD/SMS integration. The project will cover:
+
 •	Analysis of microservices communication challenges in the context of KALRO’s farmer–government interactions.
+
 •	Design of a modular, fault-tolerant architecture incorporating asynchronous communication and resilience patterns.
+
 •	Implementation of core services sufficient to demonstrate reliable inter-service communication and user request handling.
+
 •	Testing under varied connectivity and load conditions to assess system reliability, scalability, and responsiveness.
+
 •	Pilot deployment in a selected operational region for real-world evaluation.
+
 The project will not cover:
+
 •	Replacement or overhaul of KALRO’s existing back-office systems.
+
 •	Development of unrelated agricultural management tools beyond the communication-focused microservices.
+
 •	Large-scale deployment to all regions during the initial project phase.
+
 The outcomes are intended to provide both a functional case-specific solution for KALRO and generalizable insights into deploying microservices effectively in low-resource, high-demand environments.
 
 
@@ -529,46 +540,16 @@ Community Outreach: Posters, brochures, and training sessions to introduce the s
 
 B.	Budget
 
-Item	Cost
-Human Resources	
-Project Manager (6 months)	KShs600,000
-Software Developers (2 x 6 months)	KShs2,400,000
-Database Administrator (6 months)	KShs5,00000
-UI/UX Designer (3 months)	KShs450,000
-System Tester (3 months)	KShs350,000
-Field Agents (5 agents, 6 months)	KShs1,000,000
-Technical Support Staff (6 months)	KShs400,000
-Technology and Infrastructure	
-Cloud Hosting (6 months)	KShs600,000
-SMS/Mobile Integration Costs	KShs4,000,000
-Development Software and Tools	KShs300,000
-API Integration	KShs250,000
-Training and Support	
-Training Material (Manuals, Videos)	Kshs150,000
-Community Outreach (Posters, Brochures)	KShs200,000
-Miscellaneous	KShs250,000
-Total Estimated Budget	KShs7,850,000
+<img width="468" height="551" alt="image" src="https://github.com/user-attachments/assets/b74bd0fa-7395-4956-afa9-9f07308b24f5" />
+
 Table 1 Budget
+
 
 C.	Project Duration
 
-Project Phase	Duration	Start Date	End Date	Actual Start Date	Actual End Date
-Phase 1: Project Planning	2 weeks	Feb 9, 2025	Feb 24, 2025		
-Resource Allocation & Team Setup	1 week	Feb 25, 2025	Feb 28, 2025		
-Requirements Gathering	1 week	March 3, 2025	March 7, 2025		
-Phase 2: System Design	3 weeks	March 10, 2025	March 31, 2025		
-UI/UX Design	2 weeks	April 1, 2025	April 14, 2025		
-Database and System Architecture	3 weeks	April 15, 2025	April 29, 2025		
-Phase 3: Development	8 weeks	April 30, 2025	Aug 4, 2025		
-Core Ticketing System Development	5 weeks	Aug 5, 2025	Sep 8 , 2025		
-Mobile and SMS Integration	3 weeks	Sep 9, 2025	Sep 30, 2025		
-Phase 4: Testing & Refinement	4 weeks	Oct 6, 2025	Nov 3, 2025		
-System Testing & Bug Fixes	3 weeks	Nov 4, 2025	Dec 1, 2025		
-User Testing and Feedback	1 week	Dec 2, 2025	Dec 9, 2025		
-Phase 5: Deployment & Training	4 weeks	Dec 15, 2025	Jan 19 , 2026		
-System Deployment	1 week	Jan 10, 2026	Jan 27, 2026		
-Farmer Training Sessions	3 weeks	Jan 28, 2026	Feb 25, 2026		
-Phase 6: Monitoring & Support	Ongoing (6 months)	March 1, 2026	Sept 1, 2026		
+		
+<img width="468" height="629" alt="image" src="https://github.com/user-attachments/assets/fd3e9d3d-d7b2-4187-a52d-c0437bb00ed7" />
+	
 Table 2 Gantt chart
 
 
@@ -620,6 +601,7 @@ By applying asynchronous, event-driven microservices, the proposed approach aims
 
 
 2.3 CASE STUDY REVIEW.
+
 The Kenya Agricultural and Livestock Research Organisation (KALRO) operates a nationwide network that provides farmers with research findings, agricultural advice, and market information. However, the current communication systems within KALRO’s farming information services are largely centralised and partially monolithic, leading to delays in information dissemination, limited real-time interaction, and difficulties in scaling services for different regions.
 Field assessments reveal that KALRO’s digital platforms—such as USSD services, SMS notifications, and web portals—often face challenges when processing and delivering updates to farmers simultaneously across multiple regions. These challenges stem from:
 •	Synchronous dependency between modules, where a failure or delay in one service halts the entire communication process.
@@ -766,10 +748,15 @@ CHAPTER 3: SYSTEM ANALYSIS AND DESIGN
 This chapter transitions from the theoretical discussion of the communication gap in microservices to the practical analysis and design of a tangible solution. Using the Kenya Agricultural and Livestock Research Organization (KALRO) farmer communication platform as a case study, this section outlines the architectural blueprint of the proposed system. The primary objective is to detail the methodologies and design principles employed to create a robust, scalable, and decoupled system that effectively bridges the communication challenges inherent in distributed architectures.
 The core of the proposed solution is a microservices architecture where independent services communicate asynchronously. To address the central problem of inter-service communication, an event-driven, publish/subscribe model was selected. This approach, orchestrated by a central message broker, ensures that services remain loosely coupled, improving resilience and maintainability.
 This chapter will systematically break down the system's design. It will begin by defining the functional and non-functional requirements derived from the case study's needs. Subsequently, it will present the high-level system architecture, detailing each microservice's role and responsibilities. The discussion will cover the design of the:
+
 •	USSD/SMS Communication Service
+
 •	Payment Verification Service
+
 •	Data Management Service
+
 •	Notification Service
+
 Finally, the chapter will detail the data models, integration workflows, and the specific technologies chosen to implement this architecture. The following sections will provide a comprehensive overview of the system's design, beginning with the analysis of its core requirements.
 
  3.2 SYSTEMS DEVELOPMENT METHODOLOGY
@@ -777,6 +764,7 @@ Finally, the chapter will detail the data models, integration workflows, and the
 In the development of the KALRO USSD application, an Agile Software Development Methodology was adopted. This methodology emphasizes iterative development, close stakeholder collaboration, and continuous feedback—key factors when building systems meant to be both user-centric and responsive to changing agricultural service needs.
 Agile was chosen due to its suitability for projects where requirements are expected to evolve. Since the KALRO USSD app serves a wide demographic with varying literacy and technology exposure, iterative prototyping and constant user feedback loops were crucial in ensuring the final product was simple, functional, and effective.
 The Agile process followed these phases:
+
 1.	Planning and Requirement Gathering: Initial meetings with KALRO stakeholders were conducted to define the scope, major features, and target user groups of the system. This phase also involved outlining key deliverables like produce buying/selling, transport requests, and seed offers.
 2.	Design Iterations: The USSD menu structure and backend logic were designed incrementally. After each iteration, feedback was gathered from mock users and KALRO personnel to refine menu flows, improve confirmation steps, and ensure logical navigation.
 3.	Incremental Development: Using Flask for the backend and MongoDB for storage, features such as user registration, STK Push payment handling via Daraja, and purchase/sales data recording were implemented one at a time in weekly sprints. Each module was tested independently.
@@ -791,35 +779,53 @@ The feasibility study was conducted to assess whether the development and deploy
 3.3.1 Technical Feasibility
 
 The proposed system is technically feasible. The application leverages proven technologies including:
+
 •	USSD Gateway integration to facilitate interactions over feature phones.
+
 •	Flask, a lightweight and efficient Python web framework, for building the backend logic.
+
 •	MongoDB, a NoSQL database suited for flexible data models such as user sessions, transactions, and dynamic product catalogs.
+
 •	Daraja API for initiating and handling mobile money payments via STK Push.
+
 •	Hosting on cloud platforms or local servers using minimal infrastructure.
+
 All these tools are open-source or available via freemium plans, making them cost-effective and suitable for scalable deployment across various regions in Kenya.
 
 3.3.2 Operational Feasibility
 
 The system is operationally feasible for both farmers and KALRO staff:
+
 •	The USSD interface ensures accessibility to users with basic mobile phones and without internet access.
+
 •	The menu-driven design is simple, with short and clear steps.
+
 •	Payment confirmations via STK Push (Daraja) are familiar to most Kenyan mobile users, improving ease of use.
+
 •	KALRO agents can access purchase and transport data through a simple admin dashboard, aiding in logistics coordination and recordkeeping.
+
 Training needs are minimal due to the straightforward interface and language used in prompts.
 
 3.3.3 Economic Feasibility
 
 From a financial standpoint, the system is economically viable:
+
 •	Development costs were kept low by using open-source technologies (Flask, MongoDB).
+
 •	The USSD service can be provisioned using shortcodes through partnerships with mobile operators or aggregators.
+
 •	Ongoing costs are minimal and include server hosting, USSD gateway fees, and optional cloud database services.
+
 The expected economic benefits—improved market access for farmers, reduced losses from unsold produce, and more efficient agricultural input distribution—outweigh the development and operational expenses.
 
 3.3.4 Legal Feasibility
 
 The system complies with the relevant legal and regulatory frameworks in Kenya:
+
 •	Data privacy: User information, including phone numbers and transaction data, is securely stored and not shared with third parties without consent.
+
 •	Payment regulations: The Daraja API integration aligns with Safaricom’s standards and is legally compliant with Central Bank of Kenya (CBK) mobile transaction policies.
+
 •	USSD licensing: Collaboration with licensed mobile service providers ensures the system’s USSD access is lawfully provisioned.
 With proper data management and adherence to Kenya’s Data Protection Act (2019), the application meets all key legal requirements.
 
@@ -830,17 +836,25 @@ Requirements elicitation is a critical phase in the system development process t
 3.4.1 Stakeholder Identification
 
 The primary stakeholders involved in the system include:
+
 •	Smallholder farmers: The end users who interact with the USSD system to buy/sell farm produce, access seed and fertilizer offers, and request transportation services.
+
 •	KALRO officers: Agricultural officers responsible for monitoring transactions, managing logistics, and analyzing usage data from the admin dashboard.
+
 •	Agricultural input suppliers: Entities offering seeds, fertilizers, and other inputs to farmers.
+
 •	Mobile network service providers: Facilitators of USSD and mobile money infrastructure (e.g., Safaricom via the Daraja API).
 
 3.4.2 Techniques Used
 
 To ensure the requirements reflect the actual needs of users and the operating environment, the following elicitation techniques were used:
+
 •	Interviews: Informal discussions were conducted with KALRO staff and selected farmers to understand daily challenges, how they interact with agricultural systems, and their preferred workflows.
+
 •	Observation: Field visits helped understand the digital literacy level of target users and confirmed that many use basic phones without internet connectivity, reinforcing the need for a USSD interface.
+
 •	Document Review: Analysis of KALRO reports and existing agricultural service workflows provided insights into logistical issues such as delayed input delivery, unpredictable market prices, and poor record-keeping.
+
 •	Brainstorming and Feedback Loops: Development was carried out iteratively, with each feature (e.g., transport request or produce sales) being reviewed and refined based on stakeholder feedback.
 
 3.4.3 Key Requirements Identified
@@ -848,21 +862,34 @@ To ensure the requirements reflect the actual needs of users and the operating e
 From the elicitation process, the following functional and non-functional requirements were established:
 
 Functional Requirements:
+
 •	Users should be able to register using their phone number, location, and PIN.
+
 •	The USSD system must allow users to:
+
 o	Browse and purchase available farm produce.
+
 o	Sell their own produce (e.g., tomatoes, sukumawiki, onions).
+
 o	Access current offers on seeds and fertilizers.
+
 o	Request transportation for farm goods.
+
 •	Payment should be confirmed via Safaricom STK Push using Daraja API.
+
 •	Admins should have access to purchase and transport data, filtered by location.
 
 Non-Functional Requirements:
 •	The system must support session persistence across multiple steps.
+
 •	Menus must be short, intuitive, and easily navigable using a feature phone keypad.
+
 •	Responses must be fast (typically under 5 seconds) to prevent USSD timeouts.
+
 •	Data must be securely stored and protected in compliance with data protection laws.
+
 •	The system must be scalable to accommodate additional produce categories and features in future updates.
+
 
 These requirements guided the modeling and design phases and ensured the resulting system aligns with real-world usage and constraints.
 
@@ -873,40 +900,50 @@ The analysis was performed on the data collected during the requirements elicita
 3.5.1 User Behavior Patterns
 
 The analysis revealed the following behavioral insights that significantly influenced the system design:
+
 •	Most farmers use feature phones, making USSD the most practical communication interface.
+
 •	Users prefer direct navigation paths: Farmers favored short, menu-driven options with minimal steps, e.g., selecting produce by number rather than typing full names.
+
 •	Pricing sensitivity: Many users compare prices before committing to a purchase or sale, prompting the inclusion of price previews and confirmation steps.
+
 •	Reliance on mobile payments: Most users already use M-PESA, which validated the integration of STK Push via the Daraja API for secure and familiar payments.
 
 3.5.2 Functional Grouping
 
 From the data, system functionalities were grouped into the following modules:
+
 •	User Management: Registration, login with PIN, and user session tracking.
+
 •	Product Marketplace:
+
 o	Buy Produce: View available farm products, select quantity, and make payments.
+
 o	Sell Produce: Select produce, enter quantity for sale, and confirm submission.
+
 •	Inputs Offers: View available fertilizer offers by category.
+
 •	Transport Requests: Request transportation services for sold produce, with linked location data.
+
 •	Admin Dashboard Access: View filtered transactional data based on the admin’s assigned location and status.
 
 3.5.3 Data Entities and Attributes
 
 Key data elements were identified for database modeling. These include:
-Entity	Attributes
-User	Phone number, Name, PIN, Location ID, Date of Registration
-Produce Item	Name, Grades/Weight Categories, Price per unit, Available Stock
-Purchase	User ID, Produce Name, Quantity, Total Price, Payment Status, Timestamp
-Sale	User ID, Produce Type, Quantity, Selling Price, Status, Timestamp
-Transport Request	User ID, Purchase/Sale ID, Pickup Location, Status, Request Time
-Admin	Name, Email, Password, Assigned Location ID
+
+<img width="468" height="197" alt="image" src="https://github.com/user-attachments/assets/2ffd0f81-844c-4658-bb36-2be208381401" />
+
 Table 3 Data Entities and Attributes
 These entities were further used to define MongoDB collections such as users, purchased, sales, and admins.
 
 3.5.4 Workflow Insights
 
 •	Sequential menu navigation was preferred over branching to reduce confusion.
+
 •	Users often abandon sessions if required to enter long text, favoring numeric options.
+
 •	Confirmation prompts reduced transaction errors and improved user trust.
+
 The insights gained during data analysis provided the basis for modeling the system’s flow, database structure, and interface logic, all tailored for efficiency and usability.
 
 3.6 SYSTEM SPECIFICATION
@@ -916,6 +953,7 @@ The system specification defines both the functional and non-functional requirem
 3.6.1 Functional Requirements
 
 These are the specific operations and tasks the system must perform to meet user and stakeholder needs:
+
 1.	User Registration
 o	New users must register with their phone number, full name, location, and create a 4-digit PIN.
 o	Registered users must be stored in the users MongoDB collection with a unique identifier.
@@ -951,15 +989,9 @@ o	Upon success, the user receives a confirmation USSD message and the transactio
 3.6.2 Non-Functional Requirements
 
 These define the quality attributes the system must uphold for performance, security, and reliability.
-Requirement	Description
-Performance	All USSD responses must be returned within 5 seconds to prevent timeout.
-Availability	The system must be accessible 24/7 with minimal downtime.
-Scalability	The system must support additional produce types, input offers, and users.
-Security	User data and PINs must be securely stored using access controls.
-Data Integrity	Transactions must be atomic, especially around payment and confirmation steps.
-Usability	Menus must be clear, short, and intuitive to users with low digital literacy.
-Compliance	The system must adhere to Kenya’s Data Protection Act and M-PESA transaction laws.
-Localization	he system should support multilingual options in future updates.
+
+<img width="468" height="371" alt="image" src="https://github.com/user-attachments/assets/2c17b597-d6b1-44c8-8e43-813f154f52fb" />
+
 Table 4 Non-Functional Requirements
 The above specifications ensure that the KALRO USSD system meets the intended goals of accessibility, reliability, and ease of use for farmers, while remaining manageable and insightful for KALRO administrators.
 
@@ -973,31 +1005,36 @@ This section outlines the analysis process, highlights how the requirements were
 The requirements were carefully reviewed to identify logical dependencies and possible conflicts:
 
 •	Dependencies:
+
 o	STK Push payments depend on successful user authentication and product selection.
+
 o	Transport requests depend on the existence of a completed purchase with a transport_checkout_status of "declined".
+
 o	Admin dashboard filters depend on accurate location_id mapping during registration.
+
 •	Potential Conflicts and Solutions:
+
 o	Conflict: Payment confirmation and session timeout can cause data loss.
+
 	Solution: Implement asynchronous Daraja callback handling to update payment status independently of session flow.
+
 o	Conflict: Multiple transactions by a user in rapid succession may cause confusion in transport requests.
+
 	Solution: Allow selection from a list of previously completed purchases where transport was declined.
 
 3.7.2 Functional Structuring of Requirements
 
 Requirements were grouped into modular functionalities, each handled by specific components:
-Module	Functionality
-Produce Marketplace	Buying and Selling of Farm Produce
-Payment Processing	STK Push Initiation, Callback Handling
-Input Offers	Viewing seed and fertilizer offers
-Transport Request	Updating transport status for prior declined purchases
-Admin Dashboard	Viewing filtered records of purchases and transport statuses by location
-User Management	Registration, Login, Session Tracking
+
+<img width="468" height="204" alt="image" src="https://github.com/user-attachments/assets/6cc627ae-2066-473a-93d3-e2916ac1968e" />
+
 Table 5 Modules
 Each module is implemented as a Flask route (or endpoint) and interacts with MongoDB collections like users and purchased.
 
 3.7.3 Modeling Diagrams
 
 To further clarify and visualize system behavior, several modeling diagrams were used:
+
 A. Use Case Diagram
  <img width="1950" height="1950" alt="image" src="https://github.com/user-attachments/assets/a382a48c-fecf-4bc7-ac81-10a2778dedff" />
 
@@ -1045,25 +1082,41 @@ The Server
 The server is the entire microservices architecture that resides in the backend. It's not a single machine but a distributed system of interconnected services. The server's role is to receive the client's request, process it, and generate an appropriate response. This is where all the business logic, payment handling, data storage, and notification management takes place.
 The Interaction Flow
 The client-server interaction is a simple request-response cycle:
+
 1.	Request: A farmer sends a request from their phone (the client).
 2.	Processing: The request is received by the USSD/SMS Communication Service (part of the server), which then triggers the event-driven workflow you designed.
 3.	Response: The Notification Service (also part of the server) sends the final output back to the farmer's phone (the client) as an SMS or USSD session response.
 
 Major Components:
+
 •	USSD Client Interface
+
 Interacts with users through shortcodes via mobile phones.
+
 •	USSD Gateway (Middleware)
+
 Facilitates communication between the mobile network and the application server.
+
 •	Application Server (Backend)
+
 o	Handles session logic, menu navigation, and user interactions.
+
 o	Processes transactions such as purchases, registrations, and submissions.
+
 •	Database (MongoDB)
+
 Stores:
+
 o	User records (e.g., farmer profiles)
+
 o	Transactions (e.g., fertilizer purchases)
+
 o	Produce listings
+
 o	Research queries
+
 •	MPesa STK Push API
+
 Integrates mobile money for payment handling.
 
 
@@ -1084,6 +1137,7 @@ Figure 7 Client-Server
 Control flow refers to how users navigate the system and how the server handles those interactions. Each menu option triggers a route which processes the request, performs validations, interacts with the database, and returns a USSD response.
 
 Key Process Flows:
+
 1.	User Registration/Login
 o	User inputs details via USSD.
 o	System stores in users collection.
@@ -1147,17 +1201,29 @@ if purchase['transport_checkout_status'] == 'declined':
 3.8.3 Design for Non-Functional Requirements
 
 Security Strategies:
+
 •	Input validation on all entries (e.g., numeric enforcement for ID, menu options)
+
 •	STK Push via MPesa ensures secure payment flow without exposing user credentials.
+
 •	Database access is restricted and encrypted via environment credentials.
+
 Error and Exception Handling:
+
 •	Graceful fallback on invalid inputs (e.g., “Invalid option. Try again.”)
+
 •	Session timeout handling after 180 seconds of inactivity.
+
 •	Transaction rollback on payment failure.
+
 Efficiency, Effectiveness & Appeal:
+
 •	Fast-loading text-based menus optimized for low-end phones and 2G networks.
+
 •	Simple and clear wording tailored to target farmers in rural areas.
+
 •	Transport cost calculation automated to enhance decision-making.
+
 •	Session memory logic helps return users where they left off if interrupted.
 
 3.9 PHYSICAL DESIGN
@@ -1169,52 +1235,65 @@ This section presents the physical design of the KALRO USSD application. It incl
 Database Management System (DBMS):
 •	MongoDB (NoSQL) – chosen for its flexibility, scalability, and ability to store semi-structured data.
 Database Schema (Collections & Fields):
+
 Collection	Fields
-users	_id, name, location, category, phone_number, registered_at
-purchased	_id, user_id, item_name, item_type, price, quantity, transport_checkout_status, total_price, payment_status, purchased_at
-sales	_id, user_id, produce_type, quantity, price_per_unit, status, date
-admins	_id, username, password
+
+<img width="468" height="143" alt="image" src="https://github.com/user-attachments/assets/c32892e5-075c-484e-9920-3fa1252c352a" />
+
 Table 6 Database Schema
+
 Design Features:
+
 •	Data Integrity: Validations for phone numbers and numeric entries.
+
 •	Security:
+
 o	Passwords implementation in admins collection.
+
 o	Access to CRUD operations controlled via role-based privileges.
+
 •	Indexing:
+
 o	Indexes on user_id, purchased_at, and date to improve filtering and reporting.
+
 •	Optimization:
+
 o	Light-weight documents for low latency and fast query response in USSD environment.
+
 •	Storage Format:
+
 o	All data stored in JSON-like BSON format native to MongoDB.
 
 3.9.2 User Interface Design
 
 Though the system operates via a USSD interface (text-based), design considerations were applied to ensure usability, clarity, and logical flow across interactions.
-Application Programming Interfaces:
-•	USSD Gateway ↔ Application Server
-o	Handles session initiation, input capture, and response rendering.
-•	Application Server ↔ MongoDB
-o	CRUD operations for user data, offers, transactions, etc.
-•	Application Server ↔ MPesa API
-o	Sends STK Push requests and processes callbacks.
-Input and Output Forms
-Function
-	Input (User Entry)	Output (System Response)
-User Registration	
-Name, Phone number, Location,
-	"You have been registered successfully as a Farmer in [County]."
-Fertilizer Purchase	Selection of fertilizer, transport option (Yes/No), quantity confirmation	Displays total price, transport fee if applicable, asks to pay
-Transport Option	"Do you want transport?" (1 for Yes, 2 for No)	Shows delivery fee (Ksh 350) added to total, displays final cost
-Payment Confirmation	"Pay Now?" (1 for Yes, 2 for Cancel)	
-STK Push triggered or "Transaction Cancelled."
 
-Sell Farm Produce	Produce type, quantity, price per unit	"Your produce has been listed for sale."
-Login	Pin	"Welcome, [User]!" or error message if not found
+Application Programming Interfaces:
+
+•	USSD Gateway ↔ Application Server
+
+o	Handles session initiation, input capture, and response rendering.
+
+•	Application Server ↔ MongoDB
+
+o	CRUD operations for user data, offers, transactions, etc.
+
+•	Application Server ↔ MPesa API
+
+o	Sends STK Push requests and processes callbacks.
+
+Input and Output Forms
+
+<img width="468" height="408" alt="image" src="https://github.com/user-attachments/assets/b398c812-1e04-4a9a-aee3-2999ad4bf63e" />
+
 Table 7 Input and Output forms
 
 Wireframe (USSD Flow Sketch):
+
 Due to the nature of USSD, wireframes are linear. Below is a text-based wireframe example for Fertilizer Offers flow:
+
 [Main Menu]
+
 1. Fertilizer Offers
 2. Buy Farm Produce
 3. Sell Farm Produce
@@ -1222,11 +1301,13 @@ Due to the nature of USSD, wireframes are linear. Below is a text-based wirefram
 5. Exit
 
 [Fertilizer Menu]
+
 1. NPK 23-23-0 @ Ksh 3,000
 2. CAN @ Ksh 2,700
 00. More     00. Back
 
 [Confirm Buy]
+
 Do you want to buy NPK 23-23-0?
 1. Yes
 2. No
@@ -1235,11 +1316,13 @@ Do you want to buy NPK 23-23-0?
 
 
 [Transport Option]
+
 Need transport? (Add Ksh 350)
 1. Yes
 2. No
 
 [Payment]
+
 Total: Ksh 3,350
 Pay Now?
 1. Yes
@@ -1270,43 +1353,69 @@ The system was developed in a modular, multi-layered environment comprising the 
 4.2.1 Backend (Server-Side Logic)
 
 The backend was developed using Python with the Flask framework. It handles session management, menu navigation, transaction processing, and communication with the database and payment system.
+
 •	Programming Language: Python 3
+
 •	Framework: Flask (lightweight and suitable for RESTful APIs)
+
 •	Core Libraries:
+
 o	pymongo – for MongoDB integration
+
 o	requests – for API communication with M-Pesa
+
 o	python-dotenv – for environment variable management
 
 4.2.2 Middleware (USSD Gateway Integration)
 
 The USSD layer is integrated using Africa’s Talking, a platform that provides programmable USSD shortcodes and handles session routing.
+
 •	Integration Platform: Africa’s Talking (AT)
+
 •	Implementation Details:
+
 o	USSD requests are received via AT
+
 o	AT forwards user inputs to the Flask backend through POST requests
+
 o	The backend responds with the next menu or action
 
 4.2.3 Database
 
 The application uses MongoDB as its primary data storage system due to its flexibility and support for dynamic schema designs. Data is stored in collections rather than relational tables.
+
 •	Database Type: NoSQL
+
 •	Database Engine: MongoDB (hosted on MongoDB Atlas)
+
 •	Main Collections:
+
 o	users – stores user registration details
+
 o	purchased – stores fertilizer and produce purchase transactions
+
 o	sales – stores data on listed farm produce
+
 o	admins – stores admin login credentials
+
 •	Security Features:
+
 o	Encrypted connections via TLS
+
 o	Admin credentials hashed before storage
+
 o	IP-based access control (whitelisting enabled)
 
 4.2.4 Deployment Environment
 
 Development and testing were performed locally using Ngrok to expose the backend server to the internet. This allowed seamless integration with Africa's Talking USSD gateway during the development phase.
+
 •	Development OS: Windows 10
+
 •	Editor: Visual Studio Code (VS Code)
+
 •	Local Hosting Tool: Ngrok – used to tunnel the Flask server over a public URL
+
 •	Testing Devices: Safaricom-enabled GSM phones for USSD and MPesa STK Push verification
 
 4.3 SYSTEM CODE GENERATION
@@ -1317,6 +1426,7 @@ The code is structured around endpoints that respond to incoming POST requests f
 4.3.1 Key Process: USSD Entry Point
 
 This route handles incoming requests from Africa’s Talking and determines the next screen to show based on user input.
+
 @daraja_callback_bp.route("/daraja/callback", methods=["POST"])
 def daraja_callback():
     data = request.get_json(force=True)
@@ -1549,6 +1659,7 @@ Testing was a crucial phase in the development of the KALRO USSD application, en
 4.4.1 Testing Strategy
 
 The system was subjected to the following testing strategy.
+
 1. Unit Testing
 •	Tested individual functions in the backend such as:
 o	Menu rendering
@@ -1572,19 +1683,9 @@ o	Session timeouts and retry behavior
 
 4.4.2 Testing Suite and Tools
 
-Test Type	Tool/Platform	Description
-Unit Tests	
-Manual Python testing (VS Code)	Checked function outputs
-API Integration	Postman / Curl	Simulated POST requests to /ussd route
-USSD Simulation
 
+<img width="468" height="242" alt="image" src="https://github.com/user-attachments/assets/98bec8be-6725-4acc-af20-9af8372172ee" />
 
-	Africa's Talking sandbox & live USSD	Simulated USSD flow via mobile device
-Tunnel Testing
-
-
-	Ngrok	Exposed localhost to public USSD gateway
-Payment Testing	Safaricom Daraja Sandbox	Triggered STK Push flows to verify payment interaction
 Table 8 Test Suite and Tools
 
 
@@ -1602,16 +1703,9 @@ Table 8 Test Suite and Tools
 
 4.4.3 Sample Test Cases and Results
 
-Test Case	
-	Expected Result
-	Actual Result	Pass/Fail
 
-User Registration with valid input	User Registration with valid input	Success	Success
-Invalid menu input	Return “Invalid option. Try again.”	Error handled	Pass
-Fertilizer selected + transport = total	Total price includes Ksh 350 transport	Accurate total	Pass
-STK Push on "Pay Now"	Phone receives payment prompt	Prompt received	Pass
-Selling produce with quantity and price	Produce listed in sales collection	Recorded	Pass
-Transport skipped	Total shown without transport fee	Correct total	Pass
+<img width="468" height="308" alt="image" src="https://github.com/user-attachments/assets/9f7b1a63-4549-47f5-949b-3319e8a67fec" />
+
 Table 9 Test Results
 
 4.4.4 Screenshots of Tests 
@@ -1685,36 +1779,62 @@ o	A confirmation is displayed to the user.
 The development and implementation of the KALRO USSD-based agricultural platform successfully addressed the core needs identified by the client—primarily providing a simple, accessible, and reliable tool for farmers to engage with agricultural markets using basic mobile phones.
 Problem Solved
 The client’s challenge was to offer farmers—particularly those in rural areas without smartphones or internet—an effective platform to:
+
 •	Register and manage their farm produce sales and purchases,
+
 •	Access seed and fertilizer offers,
+
 •	Receive transport support for purchased goods,
+
 •	Make secure payments via M-PESA (Daraja API).
+
 The system delivered on all these objectives. The USSD menu is intuitive and fast, allowing users to perform key tasks with minimal steps. Payment integration via Safaricom’s STK Push ensured transactions were seamless and trustworthy. Furthermore, the admin dashboard enables KALRO staff to track activity based on location and transport status, giving them visibility into field operations.
+
 Significant Accomplishments
+
 •	Fully functional USSD Application built with Flask and MongoDB, tailored for low-end mobile phone users.
+
 •	Integrated STK Push (Daraja API) for payments, both for product purchases and transport requests.
+
 •	Role-based System Access with farmer USSD interactions and admin dashboard filtering by location and transaction status.
+
 •	Dynamic Transport Request Handling that updates purchased records based on user-initiated payment.
+
 •	Scalable Data Models built around MongoDB for handling real-time transactions.
+
 •	Improved Farmer Reach by removing the barrier of smartphones and internet access.
+
 Limitations
+
 Despite the successful implementation, some limitations were encountered:
+
 •	Skills Gaps: Advanced UI/UX optimization for the admin dashboard and performance tuning for MongoDB required more expertise than initially available.
+
 •	Budget Constraints: Some planned features like multilingual USSD support and SMS notifications were not implemented due to limited financial resources.
+
 •	Tooling Constraints: Hosting and deploying a fully scalable USSD platform with production-grade testing (e.g., with shortcodes and Telco environments) required expensive third-party platforms and licenses.
+
 Challenges Faced
+
 •	Technical Complexity of Daraja Integration: While documentation exists, handling asynchronous callbacks and ensuring payment verification accuracy was challenging.
+
 •	USSD Testing: Real-world testing required coordination with mobile carriers or simulators, which were not always reliable or easy to access.
+
 •	Data Modeling Iterations: Evolving features like transport requests required frequent restructuring of MongoDB documents to maintain flexibility.
+
 •	Limited Access to Devices for Field Testing: The team could not conduct large-scale live tests on actual feature phones, relying instead on sandbox environments.
+
 Despite these challenges, the system achieved its primary goals and laid a foundation for future scalability, localization, and integration with more agricultural services.
 
 4.7 RECOMMENDATIONS
 
 Improvements for the Microservices Architecture:
 Decoupled Language Support: Instead of modifying the existing USSD/SMS Communication Service to handle multilingual text, a new, dedicated Translation Microservice should be implemented. This service would subscribe to incoming events, translate relevant text, and publish a new event with the localized content. This keeps the core communication service lean and allows the system to easily add more languages in the future without redeploying other services.
+
 Specialized Transport Service: To expand the transport features (timelines, driver information, tracking), a new, dedicated Transport Management Service should be created. This service would be responsible for all logistics. It would subscribe to "order_fulfilled" events, manage the transport details, and then publish "transport_assigned" or "delivery_scheduled" events. The Notification Service would then subscribe to these new events to send the appropriate updates to the farmer, maintaining the principle of single responsibility.
+
 Dedicated Analytics and Security Microservices: The enhanced admin dashboard features should be powered by new, independent services. An Analytics and Reporting Service would subscribe to all relevant events from the Message Broker and process them to provide data for the dashboard. This offloads resource-intensive reporting queries from the primary Data Management Service. Similarly, features like rate limiting and security logging should be managed by a dedicated API Gateway and a Logging Service, which can protect the core services and provide centralized security monitoring without adding complexity to the business logic of each service.
+
 Transaction Reliability: The automated handling and monitoring of STK Push failures should be handled internally by the Payment Verification Service. This service would be enhanced to listen for failure events from the Daraja API. When a failure is detected, the service would publish a specific "payment_failure" event to the Message Broker. The Notification Service would then subscribe to this event and send an appropriate message to the farmer, ensuring transactional reliability is managed within the responsible service.
 Infrastructure for Scalability: The recommendation to migrate to a production-grade USSD gateway is an architectural improvement focused on the USSD/SMS Communication Service. The core logic of the microservice would remain the same, but the integration layer would be upgraded to ensure it can handle increased traffic and maintain compatibility across different carriers, which is crucial for scalability in a microservices environment.
 
