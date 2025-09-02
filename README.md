@@ -101,227 +101,230 @@ This project applies microservices architecture to address persistent communicat
 
 Contents:
 
-A TICKETING MECHANISM FOR KENYA AGRICULTURAL LIVESTOCK RESEARCH ORGANIZATION (KARLO) FARMERS.	     i.
+A TICKETING MECHANISM FOR KENYA AGRICULTURAL LIVESTOCK RESEARCH ORGANIZATION (KARLO) FARMERS.	     
 
-DECLARATION. 	     ii.
+DECLARATION. 	    
 
-ABSTRACT.	        iii.
+ABSTRACT.	        
 
 
 
-CHAPTER ONE:	1
+CHAPTER ONE:	
 
-1.0 INTRODUCTION.	1
+1.0 INTRODUCTION.	
 
-1.2 PROJECT OVERVIEW.	1
+1.2 PROJECT OVERVIEW.	
 
-1.3 STATE OF THE PROBLEM.	2
+1.3 STATE OF THE PROBLEM.	
 
-1.4 PROPOSED SOLUTION.	4
+1.4 PROPOSED SOLUTION.	
 
-1.5 OBJECTIVES.	5
+1.5 OBJECTIVES.	
 
-1.6 RESEARCH QUESTIONS.	6
+1.6 RESEARCH QUESTIONS.	
 
-1.7 JUSTIFICATION.	7
+1.7 JUSTIFICATION.	
 
-1.8 METHODOLOGY	7
+1.8 METHODOLOGY	
 
-1.9 SCOPE.	11
+1.9 SCOPE.	
 
-Appendices	13
+Appendices	
 
-A.	Project Resources.	13
+A.	Project Resources.	
 
-B.	Budget	14
+B.	Budget	
 
-C.	Project Duration	15
+C.	Project Duration	
 
-CHAPTER TWO	16
+CHAPTER TWO	
 
-2.1 INTRODUCTION.	16
+2.1 INTRODUCTION.	
 
-2.2 THEORETICAL REVIEW.	17
+2.2 THEORETICAL REVIEW.	
 
-2.3 CASE STUDY REVIEW.	19
+2.3 CASE STUDY REVIEW.	
 
-2.4 INTERGRATION AND ARCHITECTURE.	20
+2.4 INTERGRATION AND ARCHITECTURE.	
 
-2.4.1 Architectural Overview	20
+2.4.1 Architectural Overview	
 
-2.4.2 Integration Workflow	21
+2.4.2 Integration Workflow	
 
-2.4.3 Benefits of the Technology Stack	22
+2.4.3 Benefits of the Technology Stack	
 
-2.5 SUMMARY.	23
+2.5 SUMMARY.	
 
-2.6 RESEARCH GAPS.	23
+2.6 RESEARCH GAPS.	
 
-References	25
+References	
 
-CHAPTER 3: SYSTEM ANALYSIS AND DESIGN	26
+CHAPTER 3: SYSTEM ANALYSIS AND DESIGN	
 
-3.1 INTRODUCTION	26
+3.1 INTRODUCTION	
 
-3.2 SYSTEMS DEVELOPMENT METHODOLOGY	27
+3.2 SYSTEMS DEVELOPMENT METHODOLOGY	
 
-3.3 FEASIBILITY STUDY	28
+3.3 FEASIBILITY STUDY	
 
-3.3.1 Technical Feasibility	28
+3.3.1 Technical Feasibility	
 
-3.3.2 Operational Feasibility	28
+3.3.2 Operational Feasibility	
 
-3.3.3 Economic Feasibility	29
+3.3.3 Economic Feasibility	
 
-3.3.4 Legal Feasibility	29
+3.3.4 Legal Feasibility	
 
-3.4 REQUIREMENTS ELICITATION	30
+3.4 REQUIREMENTS ELICITATION	
 
-3.4.1 Stakeholder Identification	30
+3.4.1 Stakeholder Identification	
 
-3.4.2 Techniques Used	30
+3.4.2 Techniques Used	
 
-3.4.3 Key Requirements Identified	31
+3.4.3 Key Requirements Identified	
 
-3.5 DATA ANALYSIS	32
+3.5 DATA ANALYSIS	
 
-3.5.1 User Behavior Patterns	32
+3.5.1 User Behavior Patterns	
 
-3.5.2 Functional Grouping	32
+3.5.2 Functional Grouping	
 
-3.5.3 Data Entities and Attributes	33
+3.5.3 Data Entities and Attributes	
 
-3.5.4 Workflow Insights	33
+3.5.4 Workflow Insights	
 
-3.6 SYSTEM SPECIFICATION	33
+3.6 SYSTEM SPECIFICATION	
 
-3.6.1 Functional Requirements	34
+3.6.1 Functional Requirements	
 
-3.6.2 Non-Functional Requirements	35
+3.6.2 Non-Functional Requirements	
 
-3.7 REQUIREMENTS ANALYSIS AND MODELING	36
+3.7 REQUIREMENTS ANALYSIS AND MODELING	
 
-3.7.1 Requirements Dependency and Conflict Analysis	36
+3.7.1 Requirements Dependency and Conflict Analysis	
 
-3.7.2 Functional Structuring of Requirements	37
+3.7.2 Functional Structuring of Requirements	
 
-3.7.3 Modeling Diagrams	38
+3.7.3 Modeling Diagrams	
 
-3.8 LOGICAL DESIGN	41
-3.8.1 System Architecture	41
+3.8 LOGICAL DESIGN	
 
-The Server	41
+3.8.1 System Architecture	
 
-The Interaction Flow	41
+3.8.1.1 The Server	
 
-3.8.2 Control Flow and Process Design	44
+3.8.1.2 The Interaction Flow	
 
-3.8.3 Design for Non-Functional Requirements	48
+3.8.1.3 Client-Server
 
-3.9 PHYSICAL DESIGN	48
+3.8.2 Control Flow and Process Design	
 
-3.9.1 Database Design	48
+3.8.3 Design for Non-Functional Requirements	
 
-3.9.2 User Interface Design	49
+3.9 PHYSICAL DESIGN	
 
-CHAPTER 4: SYSTEM IMPLEMENTATION AND TESTING,	53
+3.9.1 Database Design	
 
-CONCLUSIONS AND RECOMMENDATIONS	53
+3.9.2 User Interface Design	
 
-4.1 INTRODUCTION	53
+CHAPTER 4: SYSTEM IMPLEMENTATION AND TESTING,	
 
-4.2 ENVIRONMENT AND TOOLS	53
+CONCLUSIONS AND RECOMMENDATIONS	
 
-4.2.1 Backend (Server-Side Logic)	53
+4.1 INTRODUCTION	
 
-4.2.2 Middleware (USSD Gateway Integration)	54
+4.2 ENVIRONMENT AND TOOLS	
 
-4.2.3 Database	54
+4.2.1 Backend (Server-Side Logic)	
 
-4.2.4 Deployment Environment	54
+4.2.2 Middleware (USSD Gateway Integration)	
 
-4.3 SYSTEM CODE GENERATION	55
+4.2.3 Database	
 
-4.3.1 Key Process: USSD Entry Point	55
+4.2.4 Deployment Environment	
 
-4.3.2 Key Process: Registration	56
+4.3 SYSTEM CODE GENERATION	
 
-4.3.3 Key Process: Fertilizer Purchase with Transport Option	57
+4.3.1 Key Process: USSD Entry Point	
 
-4.3.4 Key Process: MPesa STK Push Integration	58
+4.3.2 Key Process: Registration	
 
-4.3.5 Key Process: Produce Sale Listing	59
+4.3.3 Key Process: Fertilizer Purchase with Transport Option	
 
-4.4 TESTING	61
+4.3.4 Key Process: MPesa STK Push Integration	
 
-4.4.1 Testing Strategy	61
+4.3.5 Key Process: Produce Sale Listing	
 
-4.4.2 Testing Suite and Tools	62
+4.4 TESTING	
 
-4.4.3 Sample Test Cases and Results	63
+4.4.1 Testing Strategy	
 
-4.4.4 Screenshots of Tests	64
+4.4.2 Testing Suite and Tools	
 
-4.5 USER GUIDE	65
+4.4.3 Sample Test Cases and Results	
 
-4.6 CONCLUSIONS	67
+4.4.4 Screenshots of Tests	
 
-4.7 RECOMMENDATIONS	69
+4.5 USER GUIDE	
+
+4.6 CONCLUSIONS	
+
+4.7 RECOMMENDATIONS	
 
 Cases
-KALRO: Kenya Agricultural and Livestock Research Organization	1
+KALRO: Kenya Agricultural and Livestock Research Organization	
 
-USSD: Unstructured Supplementary Service Data	6
+USSD: Unstructured Supplementary Service Data	
 
-SMS: Short Message Service	6
+SMS: Short Message Service	
 
-API: Application programming interface	19
+API: Application programming interface	
 
-IDE: Intergrated Development Environment	19
+IDE: Intergrated Development Environment	
 
-UI: User Interaction	19
+UI: User Interaction	
 
-UX: User Experience	19
+UX: User Experience	
 
-Figure 1 Communication Gaps	3
+Figure 1 Communication Gaps	
 
-Figure 2 Agile Planning	10
+Figure 2 Agile Planning	
 
-Figure 3 Microservice Architecture	22
+Figure 3 Microservice Architecture	
 
-Figure 4 Use Case	38
+Figure 4 Use Case	
 
-Figure 5 Data Flow Diagram	39
+Figure 5 Data Flow Diagram	
 
-Figure 6 Class Diagram	40
+Figure 6 Class Diagram	
 
-Figure 7 Client-Server	43
+Figure 7 Client-Server	
 
-Figure 8 Sequence Diagram	45
+Figure 8 Sequence Diagram	
 
-Figure 9 Activity Diagram	47
+Figure 9 Activity Diagram	
 
-Figure 10 Wireframe	52
+Figure 10 Wireframe	
 
-Figure 11 Screenshots	64
+Figure 11 Screenshots	
 
-Table 1 Budget	15
+Table 1 Budget	
 
-Table 2 Gantt chart	16
+Table 2 Gantt chart	
 
-Table 3 Data Entities and Attributes	33
+Table 3 Data Entities and Attributes	
 
-Table 4 Non-Functional Requirements	36
+Table 4 Non-Functional Requirements	
 
-Table 5 Modules	37
+Table 5 Modules	
 
-Table 6 Database Schema	49
+Table 6 Database Schema	
 
-Table 7 Input and Output forms	50
+Table 7 Input and Output forms	
 
-Table 8 Test Suite and Tools	62
+Table 8 Test Suite and Tools	
 
-Table 9 Test Results	63
+Table 9 Test Results	
 
 
 
