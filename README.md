@@ -931,7 +931,9 @@ o	Sell Produce: Select produce, enter quantity for sale, and confirm submission.
 
 Key data elements were identified for database modeling. These include:
 
-<img width="468" height="197" alt="image" src="https://github.com/user-attachments/assets/2ffd0f81-844c-4658-bb36-2be208381401" />
+
+<img width="468" height="197" alt="image" src="https://github.com/user-attachments/assets/908a05b2-4663-4d90-b2f4-47f37dc12675" />
+
 
 Table 3 Data Entities and Attributes
 These entities were further used to define MongoDB collections such as users, purchased, sales, and admins.
@@ -990,7 +992,8 @@ o	Upon success, the user receives a confirmation USSD message and the transactio
 
 These define the quality attributes the system must uphold for performance, security, and reliability.
 
-<img width="468" height="371" alt="image" src="https://github.com/user-attachments/assets/2c17b597-d6b1-44c8-8e43-813f154f52fb" />
+<img width="468" height="371" alt="image" src="https://github.com/user-attachments/assets/8665cbfe-e60f-4f27-adc2-585ddb09417f" />
+
 
 Table 4 Non-Functional Requirements
 The above specifications ensure that the KALRO USSD system meets the intended goals of accessibility, reliability, and ease of use for farmers, while remaining manageable and insightful for KALRO administrators.
@@ -1026,7 +1029,8 @@ o	Conflict: Multiple transactions by a user in rapid succession may cause confus
 
 Requirements were grouped into modular functionalities, each handled by specific components:
 
-<img width="468" height="204" alt="image" src="https://github.com/user-attachments/assets/6cc627ae-2066-473a-93d3-e2916ac1968e" />
+<img width="468" height="204" alt="image" src="https://github.com/user-attachments/assets/7b996a8c-6052-4feb-b802-df22798fb5a7" />
+
 
 Table 5 Modules
 Each module is implemented as a Flask route (or endpoint) and interacts with MongoDB collections like users and purchased.
@@ -1238,7 +1242,8 @@ Database Schema (Collections & Fields):
 
 Collection	Fields
 
-<img width="468" height="143" alt="image" src="https://github.com/user-attachments/assets/c32892e5-075c-484e-9920-3fa1252c352a" />
+<img width="468" height="143" alt="image" src="https://github.com/user-attachments/assets/8b8fc954-5a91-45ab-8df0-50d682987fd9" />
+
 
 Table 6 Database Schema
 
@@ -1284,7 +1289,7 @@ o	Sends STK Push requests and processes callbacks.
 
 Input and Output Forms
 
-<img width="468" height="408" alt="image" src="https://github.com/user-attachments/assets/b398c812-1e04-4a9a-aee3-2999ad4bf63e" />
+<img width="468" height="408" alt="image" src="https://github.com/user-attachments/assets/a73ac6cf-f0d1-4780-b7e0-f326e2be43fc" />
 
 Table 7 Input and Output forms
 
@@ -1683,8 +1688,8 @@ o	Session timeouts and retry behavior
 
 4.4.2 Testing Suite and Tools
 
+<img width="468" height="242" alt="image" src="https://github.com/user-attachments/assets/e35d1592-da54-4d0f-84a6-eab6aa5f4a43" />
 
-<img width="468" height="242" alt="image" src="https://github.com/user-attachments/assets/98bec8be-6725-4acc-af20-9af8372172ee" />
 
 Table 8 Test Suite and Tools
 
@@ -1704,7 +1709,8 @@ Table 8 Test Suite and Tools
 4.4.3 Sample Test Cases and Results
 
 
-<img width="468" height="308" alt="image" src="https://github.com/user-attachments/assets/9f7b1a63-4549-47f5-949b-3319e8a67fec" />
+<img width="468" height="308" alt="image" src="https://github.com/user-attachments/assets/7c2b0c4d-8cef-4dc3-b8c9-487e5a673205" />
+
 
 Table 9 Test Results
 
