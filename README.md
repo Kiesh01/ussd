@@ -99,7 +99,8 @@ This project applies microservices architecture to address persistent communicat
 
 
 
-Contents
+Contents:
+
 A TICKETING MECHANISM FOR KENYA AGRICULTURAL LIVESTOCK RESEARCH ORGANIZATION (KARLO) FARMERS.	i
 
 DECLARATION	ii
