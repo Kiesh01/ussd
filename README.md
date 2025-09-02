@@ -6,7 +6,9 @@ A TICKETING MECHANISM FOR KENYA AGRICULTURAL LIVESTOCK RESEARCH ORGANIZATION (KA
 
 
 AUTHOR:  KIERU GITAU
+
 REG NO: SCT221-0520/2021
+
 SUPERVISOR: Dr. DENNIS KABURU
 
 
@@ -28,7 +30,7 @@ SUPERVISOR: Dr. DENNIS KABURU
 
 
 
-A proposal/ research project submitted to the Department of Information Technology in the School of Information Technology in partial fulfillment of the requirement for the award of the degree of Information Technology,                          Jomo Kenyatta University of Agriculture and Technology.
+A proposal/ research project submitted to the Department of Information Technology in the School of Information Technology in partial fulfillment of the requirement for the award of the degree of Information Technology,Jomo Kenyatta University of Agriculture and Technology.
 
 
 2025
